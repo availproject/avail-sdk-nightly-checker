@@ -11,7 +11,7 @@ from dotenv import load_dotenv
 load_dotenv("/root/desktop/.env")
 
 # Target directory for the new avail-js environment
-TARGET_DIR = "/root/desktop/avail-js-2"
+TARGET_DIR = "/root/desktop/avail-js"
 # URL for the markdown documentation
 DOCS_URL = "https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/page.mdx"
 
