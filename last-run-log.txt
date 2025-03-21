@@ -34,14 +34,14 @@ Command output:
 Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Submitting data to App Id: 89
 Submitting transaction with data...
-Block Hash: 0xce2110acb3f8810fa91b993478fa9a09482243ac28ffa55143d354ed72de3f74, Block Number: 1544641, Tx Hash: 0x5cba459f614f6bbe52012b16e9884204c181f06220790bb31adc00151cacb8ab, Tx Index: 1
+Block Hash: 0xc12442f6545c26ff68d0a9e04a04b33418c275cd6094069feefe2a6a8074508a, Block Number: 1544758, Tx Hash: 0xb9f1cf07acf78b28e8e03a91c243095c2bd18fdaa3393b3231c3916a5b607c77, Tx Index: 1
 Data submitted successfully:
 Who: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 DataHash: 0xd92871f83b488631e262173785fc43a9818951188baa933653739bcc33fe8931
 Data submission completed successfully
 
 Error output:
-2025-03-21 22:31:45 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-21 23:10:49 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JavaScript data submission was successful!
 Updated avail_js_da_submit_data result to True
@@ -53,13 +53,13 @@ Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x4dcfdea4ca95a6e699fcdeebf1f2bcc2fc8c4b9ed28bb18644b0495b47b7f27b, Block Number: 1544643, Tx Hash: 0x0c1329263711167b25c6412b4ad7011e86470bb67a7f6f7391991770f539f70d, Tx Index: 1
+Block Hash: 0x2ca94d81285f3a57387df750b6dde2560e7762088648b33707d76635c6ff893a, Block Number: 1544760, Tx Hash: 0xd190cdd30290de1173bf04cc9baf7cab5e70244e43d35f1f7ff6f2b2d4a6ea60, Tx Index: 2
 Call data: "My Data"
 Data Submission finished correctly
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.66s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.20s
      Running `target/debug/avail-rust`
 
 Rust data submission was successful!
@@ -72,7 +72,7 @@ Successfully wrote Go code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0xdbd7453b8696b9ed4b4eaf69383658618f11f8901749f215740b9dc57c166ab6, Block Index: 1544644, Tx Hash: 0x7ec483555b8d378ec0ce476073287d8ba72f050551f994e04f827c7990083c94, Tx Index: 1
+Block Hash: 0xdcd3b7b37022d077926f0ae36eb21e694c1b0b476f7185d49469b9fc0158cafe, Block Index: 1544761, Tx Hash: 0xcdece27e5f4daf4670e03354b6d9ad237a9ace56cb7a81915acc5f6ddfe4b021, Tx Index: 1
 Data submission completed successfully
 
 Go data submission was successful!
@@ -102,7 +102,7 @@ Script directory: /root/desktop/scripts/snippets
 ===== Processing JavaScript SDK =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
 Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
-Set unique application key: avail-js-automated-run-check-21-03-2025-20250321_223304
+Set unique application key: avail-js-automated-run-check-21-03-2025-20250321_231203
 Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
 Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
@@ -110,12 +110,12 @@ Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Submitting transaction to create application key...
 Application created successfully:
 Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Key: avail-js-automated-run-check-21-03-2025-20250321_223304
-App Id: 334
-Transaction Hash: 0xf870d87c2b68441cd0c600cf2ff1dd13c3fe403b85faea31142919afadf37834
+Key: avail-js-automated-run-check-21-03-2025-20250321_231203
+App Id: 340
+Transaction Hash: 0x5f1833708033361beadf1ddba920c96571ebe2dd08655b33a14d9dff4738b031
 
 Error output:
-2025-03-21 22:33:16 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-21 23:12:14 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 Third line of output: Application created successfully:
 JavaScript application key creation was successful!
@@ -124,17 +124,17 @@ Updated avail_js_da_create_application_key result to True
 ===== Processing Rust SDK =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
 Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
-Set unique application key: avail-rust-automated-run-check-21-03-2025-20250321_223304
+Set unique application key: avail-rust-automated-run-check-21-03-2025-20250321_231203
 Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Application Key Created
-335
+341
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.17s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.80s
      Running `target/debug/avail-rust`
 
 Second last line of output: Application Key Created
@@ -144,14 +144,14 @@ Updated avail_rust_da_create_application_key result to True
 ===== Processing Go SDK =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
 Successfully wiped contents of /root/desktop/avail-go/main.go
-Set unique application key: avail-go-automated-run-check-21-03-2025-20250321_223304
+Set unique application key: avail-go-automated-run-check-21-03-2025-20250321_231203
 Successfully wrote Go code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Application Key Created Successfully
-Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3, Key: avail-go-automated-run-check-21-03-2025-20250321_223304, AppId: 336
-Block Hash: 0x060561223ed4db666ccef02837a448dcf1c6cb8275e2bdf417bdcf6c8d46ac85, Block Index: 1544647, Tx Hash: 0xf270aca336ad575cbff1a64ad807411226b71f8a58f9b0a9d0ae71523e306004, Tx Index: 1
+Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3, Key: avail-go-automated-run-check-21-03-2025-20250321_231203, AppId: 342
+Block Hash: 0x951d85609fa8ba642bfb00f9567c7843a454c39e46c95bb59ebf92431fa6ee42, Block Index: 1544764, Tx Hash: 0xebf085e72523ead8b2441236c46d3b17a6f0e0a653a0f69a2b1e79d6b56d4640, Tx Index: 1
 Application Key Created
 
 Last line of output: Application Key Created
@@ -183,3 +183,11 @@ Removing directory: /root/desktop/avail-go
 Successfully removed /root/desktop/avail-go
 
 === Cleanup completed ===
+
+=== Sending results to Slack ===
+Running Slack bot script: /root/desktop/slack-bot.py
+Slack bot output: Message posted successfully: 1742598784.946629
+
+Successfully sent results to Slack
+
+=== Notification process completed ===
