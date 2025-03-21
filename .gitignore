@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# dotenv
+.env
+
+# removing cron-log
+cron_log.txt
+
+# removing python-mock.py
+python-mock.py
+
+# removing bot-test.py
+bot-test.py
