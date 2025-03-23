@@ -79,29 +79,39 @@ reset_results()
 
 try:
 
+    # Force scripts to flush output immediately
+    env = os.environ.copy()
+    env["PYTHONUNBUFFERED"] = "1"
+
     # Execute the Avail-js environment setup script
     print("\n=== Setting up avail-js environment ===")
     avail_js_env_setup_script = "./scripts/dev-env/avail-js.py"
     print(f"Running script: {os.path.abspath(avail_js_env_setup_script)}")
 
-    # Force scripts to flush output immediately
-    env = os.environ.copy()
-    env["PYTHONUNBUFFERED"] = "1"
-
     try:
-        # Run the environment setup script
-        proc = subprocess.run(["python", avail_js_env_setup_script], capture_output=True, text=True, timeout=300, env=env, cwd=os.path.dirname(os.path.abspath(__file__)))
+        # Use Popen for real-time output streaming
+        process = subprocess.Popen(
+            ["python", avail_js_env_setup_script],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,  # Line buffered
+            env=env  # Use the same env with PYTHONUNBUFFERED=1
+        )
         
-        if proc.returncode != 0:
-            print(f"Avail-js environment setup failed with return code {proc.returncode}")
-            print(f"Error output: {proc.stderr}")
+        # Stream output in real-time
+        for line in iter(process.stdout.readline, ''):
+            print(line, end='')  # Print each line as it comes
+        
+        # Wait for the process to complete and get return code
+        return_code = process.wait()
+        
+        if return_code != 0:
+            print(f"\nAvail-js environment setup failed with return code {return_code}")
             sys.exit(1)
         else:
-            print("Avail-js environment setup completed successfully")
+            print("\nAvail-js environment setup completed successfully")
             
-    except subprocess.TimeoutExpired:
-        print(f"Avail-js environment setup script timed out.")
-        sys.exit(1)
     except Exception as e:
         print(f"Error running avail-js environment setup script: {e}")
         sys.exit(1)
@@ -114,15 +124,28 @@ try:
     print(f"Running script: {os.path.abspath(avail_rust_env_setup_script)}")
 
     try:
-        # Run the environment setup script
-        proc = subprocess.run(["python", avail_rust_env_setup_script], capture_output=True, text=True, timeout=1200, env=env, cwd=os.path.dirname(os.path.abspath(__file__)))
+        # Use Popen for real-time output streaming
+        process = subprocess.Popen(
+            ["python", avail_rust_env_setup_script],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,  # Line buffered
+            env=env  # Use the same env with PYTHONUNBUFFERED=1
+        )
         
-        if proc.returncode != 0:
-            print(f"Avail-rust environment setup failed with return code {proc.returncode}")
-            print(f"Error output: {proc.stderr}")
+        # Stream output in real-time
+        for line in iter(process.stdout.readline, ''):
+            print(line, end='')  # Print each line as it comes
+        
+        # Wait for the process to complete and get return code
+        return_code = process.wait()
+        
+        if return_code != 0:
+            print(f"\nAvail-rust environment setup failed with return code {return_code}")
             sys.exit(1)
         else:
-            print("Avail-rust environment setup completed successfully")
+            print("\nAvail-rust environment setup completed successfully")
             
     except subprocess.TimeoutExpired:
         print(f"Avail-rust environment setup script timed out.")
@@ -138,16 +161,29 @@ try:
     print(f"Running script: {os.path.abspath(avail_go_env_setup_script)}")
 
     try:
-        # Run the environment setup script
-        proc = subprocess.run(["python", avail_go_env_setup_script], capture_output=True, text=True, timeout=300, env=env, cwd=os.path.dirname(os.path.abspath(__file__)))
+        # Use Popen for real-time output streaming
+        process = subprocess.Popen(
+            ["python", avail_go_env_setup_script],
+            stdout=subprocess.PIPE,
+            stderr=subprocess.STDOUT,
+            text=True,
+            bufsize=1,  # Line buffered
+            env=env  # Use the same env with PYTHONUNBUFFERED=1
+        )
         
-        if proc.returncode != 0:
-            print(f"Avail-go environment setup failed with return code {proc.returncode}")
-            print(f"Error output: {proc.stderr}")
+        # Stream output in real-time
+        for line in iter(process.stdout.readline, ''):
+            print(line, end='')  # Print each line as it comes
+        
+        # Wait for the process to complete and get return code
+        return_code = process.wait()
+        
+        if return_code != 0:
+            print(f"\nAvail-go environment setup failed with return code {return_code}")
             sys.exit(1)
         else:
-            print("Avail-go environment setup completed successfully")
-
+            print("\nAvail-go environment setup completed successfully")
+            
     except subprocess.TimeoutExpired:
         print(f"Avail-go environment setup script timed out.")
         sys.exit(1)
@@ -239,6 +275,73 @@ try:
             print(f"Error removing directory {dir_path}: {e}")
 
     print("\n=== Cleanup completed ===")
+
+    # # Push results to Git repository
+    # print("\n=== Pushing results to Git repository ===")
+    # try:
+    #     # Get current timestamp for commit message
+    #     current_time = datetime.now().isoformat()
+        
+    #     # Change to the desktop directory where the Git repository is initialized
+    #     git_commands = [
+    #         ["git", "add", "run-results.json", "last-run-log.txt"],
+    #         ["git", "commit", "-m", f"Pushing log result of run at {current_time}"],
+    #         ["git", "push", "origin", "main"]
+    #     ]
+        
+    #     for cmd in git_commands:
+    #         print(f"Running: {' '.join(cmd)}")
+    #         result = subprocess.run(
+    #             cmd,
+    #             cwd="/root/desktop",
+    #             capture_output=True,
+    #             text=True
+    #         )
+            
+    #         if result.returncode == 0:
+    #             print(f"Command succeeded: {result.stdout.strip()}")
+    #         else:
+    #             print(f"Command failed with return code {result.returncode}")
+    #             print(f"Error: {result.stderr.strip()}")
+    #             print("Continuing with next steps...")
+        
+    #     # For push, we have options:
+    #     # OPTION 1: Using environment variable for GitHub token (RECOMMENDED)
+    #     # Set GITHUB_TOKEN environment variable before running the script
+    #     github_token = os.environ.get("GITHUB_TOKEN")
+    #     if github_token:
+    #         print("Running: git push (with token from environment)")
+    #         # Construct the URL with the token
+    #         repo_url = f"https://{github_token}@github.com/availproject/avail-sdk-nightly-checker.git"
+    #         result = subprocess.run(
+    #             ["git", "push", repo_url, "main"],
+    #             cwd="/root/desktop",
+    #             capture_output=True,
+    #             text=True
+    #         )
+    #     else:
+    #         # OPTION 2: Fall back to regular push (requires pre-configured credentials)
+    #         print("Running: git push origin main (requires pre-configured credentials)")
+    #         print(For cron jobs, this may fail unless credentials are properly configured")
+    #         result = subprocess.run(
+    #             ["git", "push", "origin", "main"],
+    #             cwd="/root/desktop",
+    #             capture_output=True,
+    #             text=True
+    #         )
+        
+    #     if result.returncode == 0:
+    #         print(f"Push succeeded: {result.stdout.strip()}")
+    #     else:
+    #         print(f"Push failed with return code {result.returncode}")
+    #         print(f"Error: {result.stderr.strip()}")
+        
+    #     print("Git push completed")
+    # except Exception as e:
+    #     print(f"Error during Git operations: {e}")
+    #     print("Continuing with next steps...")
+    
+    print("\n=== Script execution completed ===")
 
 finally:
     # Restore stdout

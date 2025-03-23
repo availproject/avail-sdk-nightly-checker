@@ -47,8 +47,9 @@ except (ValueError, TypeError):
     formatted_date = "today"  # Fallback if we can't parse the timestamp
 
 # Build a message string with a mention and date before the code block
-message = f"Results for the bot's nightly run for {formatted_date}:\n\n"
-message += f"*Avail SDK Tests - Run at {formatted_time}*\n```\n"
+message = f"<@U0689CNJQEA>, these are the results for the nightly run for {formatted_date}:\n\n"
+message += f"- The full log file can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/last-run-log.txt|last-run-log.txt>\n"
+message += f"- The JSON formatted results can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/run-results.json|run-results.json>\n\n"
 
 for label, value in results.items():
     status = "✅" if value else "❌"
