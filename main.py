@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 import subprocess
 import re
 import sys
@@ -155,8 +156,6 @@ try:
         sys.exit(1)
     print("\n================================================")
 
-
-
     # Executing the data submission script
     print("\n=== Running data submission script ===")
 
@@ -240,35 +239,6 @@ try:
             print(f"Error removing directory {dir_path}: {e}")
 
     print("\n=== Cleanup completed ===")
-
-    # Calls the Slack bot to send notification
-    print("\n=== Sending results to Slack ===")
-    slack_bot_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "slack-bot.py")
-    
-    try:
-        # Run the Slack bot script
-        print(f"Running Slack bot script: {slack_bot_script}")
-        slack_proc = subprocess.run(
-            ["python", slack_bot_script],
-            capture_output=True,
-            text=True,
-            env=env
-        )
-        
-        # Print output from the Slack bot script
-        if slack_proc.stdout:
-            print(f"Slack bot output: {slack_proc.stdout}")
-        
-        if slack_proc.returncode == 0:
-            print("Successfully sent results to Slack")
-        else:
-            print(f"Slack bot script failed with return code {slack_proc.returncode}")
-            if slack_proc.stderr:
-                print(f"Error: {slack_proc.stderr}")
-    except Exception as e:
-        print(f"Error running Slack bot script: {e}")
-    
-    print("\n=== Notification process completed ===")
 
 finally:
     # Restore stdout

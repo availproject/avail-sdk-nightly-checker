@@ -12,11 +12,19 @@ wheels/
 # dotenv
 .env
 
-# removing cron-log
+# removing cron-log files
 cron_log.txt
+main-cron.log
+test-cron.log
+slack-cron.log
 
 # removing python-mock.py
 python-mock.py
 
 # removing bot-test.py
 bot-test.py
+
+# Removing avail-sdk directories
+avail-js
+avail-rust
+avail-go

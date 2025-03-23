@@ -40,12 +40,24 @@ def extract_content(markdown, content_name):
     return None
 
 def create_directory():
-    """Create the target directory if it doesn't exist"""
+    """Create the target directory if it doesn't exist, or delete and recreate it if it does"""
     if os.path.exists(TARGET_DIR):
-        print(f"Target directory {TARGET_DIR} already exists.")
-    else:
+        print(f"Target directory {TARGET_DIR} already exists. Removing it...")
+        try:
+            import shutil
+            shutil.rmtree(TARGET_DIR)
+            print(f"Successfully removed existing directory: {TARGET_DIR}")
+        except Exception as e:
+            print(f"Error removing existing directory: {e}")
+            sys.exit(1)
+    
+    # Create the directory (either it didn't exist or we just deleted it)
+    try:
         os.makedirs(TARGET_DIR)
         print(f"Created directory: {TARGET_DIR}")
+    except Exception as e:
+        print(f"Error creating directory: {e}")
+        sys.exit(1)
 
 def run_command(command):
     """Run the command in the target directory, handling && operators"""
