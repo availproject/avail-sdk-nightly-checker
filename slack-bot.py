@@ -48,8 +48,9 @@ except (ValueError, TypeError):
 
 # Build a message string with a mention and date before the code block
 message = f"<@U0689CNJQEA>, these are the results for the nightly run for {formatted_date}:\n\n"
-message += f"- The full log file can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/last-run-log.txt|last-run-log.txt>\n"
-message += f"- The JSON formatted results can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/run-results.json|run-results.json>\n\n"
+message += f"• The full log file can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/last-run-log.txt|last-run-log.txt>\n"
+message += f"• The JSON formatted results can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/run-results.json|run-results.json>\n\n"
+message += f"*Avail SDK Tests - Run at {formatted_time}*\n```\n"
 
 for label, value in results.items():
     status = "✅" if value else "❌"
@@ -61,7 +62,9 @@ message += "```"
 try:
     response = client.chat_postMessage(
         channel="#avail-node-sdks-nightly-check",  # Replace with your channel name
-        text=message
+        text=message,
+        unfurl_links=False,
+        unfurl_media=False
     )
     print("Message posted successfully:", response["ts"])
 except SlackApiError as e:
