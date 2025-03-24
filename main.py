@@ -5,6 +5,10 @@ import sys
 import os
 import json
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Set current working directory to script location to ensure consistent paths
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -76,6 +80,96 @@ def reset_results():
 
 # Reset all results to false
 reset_results()
+
+def push_to_github():
+    """Push results and logs to GitHub repository"""
+    print("\n=== Pushing results to Git repository ===")
+    try:
+        # Get current timestamp for commit message
+        current_time = datetime.now().isoformat()
+        
+        # Get GitHub token from environment (loaded from .env)
+        github_token = os.environ.get("GITHUB_TOKEN")
+        if not github_token:
+            print("Error: GITHUB_TOKEN not found in environment variables")
+            print("Please ensure GITHUB_TOKEN is set in your .env file")
+            return False
+        
+        # Configure Git identity
+        print("Configuring Git identity...")
+        git_config_commands = [
+            ["git", "config", "--global", "user.name", "Avail SDK Nightly Checker"],
+            ["git", "config", "--global", "user.email", "noreply@avail.io"]
+        ]
+        
+        for cmd in git_config_commands:
+            print(f"Running: {' '.join(cmd)}")
+            result = subprocess.run(
+                cmd,
+                cwd="/root/desktop",
+                capture_output=True,
+                text=True
+            )
+            if result.returncode != 0:
+                print(f"Git config failed: {result.stderr.strip()}")
+                return False
+        
+        # Stage changes
+        print("\nStaging changes...")
+        stage_result = subprocess.run(
+            ["git", "add", "run-results.json", "last-run-log.txt"],
+            cwd="/root/desktop",
+            capture_output=True,
+            text=True
+        )
+        if stage_result.returncode != 0:
+            print(f"Failed to stage files: {stage_result.stderr.strip()}")
+            return False
+        
+        # Check if there are changes to commit
+        status_result = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd="/root/desktop",
+            capture_output=True,
+            text=True
+        )
+        
+        if not status_result.stdout.strip():
+            print("No changes to commit")
+            return True
+        
+        # Commit changes
+        print("\nCommitting changes...")
+        commit_result = subprocess.run(
+            ["git", "commit", "-m", f"Pushing log result of run at {current_time}"],
+            cwd="/root/desktop",
+            capture_output=True,
+            text=True
+        )
+        if commit_result.returncode != 0:
+            print(f"Commit failed: {commit_result.stderr.strip()}")
+            return False
+        
+        # Push changes using token
+        print("\nPushing changes to GitHub...")
+        repo_url = f"https://{github_token}@github.com/availproject/avail-sdk-nightly-checker.git"
+        push_result = subprocess.run(
+            ["git", "push", repo_url, "main"],
+            cwd="/root/desktop",
+            capture_output=True,
+            text=True
+        )
+        
+        if push_result.returncode == 0:
+            print("Successfully pushed changes to GitHub")
+            return True
+        else:
+            print(f"Push failed: {push_result.stderr.strip()}")
+            return False
+
+    except Exception as e:
+        print(f"Error during Git operations: {e}")
+        return False
 
 try:
 
@@ -276,71 +370,7 @@ try:
 
     print("\n=== Cleanup completed ===")
 
-    # # Push results to Git repository
-    # print("\n=== Pushing results to Git repository ===")
-    # try:
-    #     # Get current timestamp for commit message
-    #     current_time = datetime.now().isoformat()
-        
-    #     # Change to the desktop directory where the Git repository is initialized
-    #     git_commands = [
-    #         ["git", "add", "run-results.json", "last-run-log.txt"],
-    #         ["git", "commit", "-m", f"Pushing log result of run at {current_time}"],
-    #         ["git", "push", "origin", "main"]
-    #     ]
-        
-    #     for cmd in git_commands:
-    #         print(f"Running: {' '.join(cmd)}")
-    #         result = subprocess.run(
-    #             cmd,
-    #             cwd="/root/desktop",
-    #             capture_output=True,
-    #             text=True
-    #         )
-            
-    #         if result.returncode == 0:
-    #             print(f"Command succeeded: {result.stdout.strip()}")
-    #         else:
-    #             print(f"Command failed with return code {result.returncode}")
-    #             print(f"Error: {result.stderr.strip()}")
-    #             print("Continuing with next steps...")
-        
-    #     # For push, we have options:
-    #     # OPTION 1: Using environment variable for GitHub token (RECOMMENDED)
-    #     # Set GITHUB_TOKEN environment variable before running the script
-    #     github_token = os.environ.get("GITHUB_TOKEN")
-    #     if github_token:
-    #         print("Running: git push (with token from environment)")
-    #         # Construct the URL with the token
-    #         repo_url = f"https://{github_token}@github.com/availproject/avail-sdk-nightly-checker.git"
-    #         result = subprocess.run(
-    #             ["git", "push", repo_url, "main"],
-    #             cwd="/root/desktop",
-    #             capture_output=True,
-    #             text=True
-    #         )
-    #     else:
-    #         # OPTION 2: Fall back to regular push (requires pre-configured credentials)
-    #         print("Running: git push origin main (requires pre-configured credentials)")
-    #         print(For cron jobs, this may fail unless credentials are properly configured")
-    #         result = subprocess.run(
-    #             ["git", "push", "origin", "main"],
-    #             cwd="/root/desktop",
-    #             capture_output=True,
-    #             text=True
-    #         )
-        
-    #     if result.returncode == 0:
-    #         print(f"Push succeeded: {result.stdout.strip()}")
-    #     else:
-    #         print(f"Push failed with return code {result.returncode}")
-    #         print(f"Error: {result.stderr.strip()}")
-        
-    #     print("Git push completed")
-    # except Exception as e:
-    #     print(f"Error during Git operations: {e}")
-    #     print("Continuing with next steps...")
-    
+
     print("\n=== Script execution completed ===")
 
 finally:
@@ -352,5 +382,13 @@ finally:
         with open(LOG_FILE, 'w') as f:
             f.write(output_capturer.get_content())
         print(f"Saved complete log to {LOG_FILE}")
+        
+        # Push the results and logs to GitHub
+        push_success = push_to_github()
+        if push_success:
+            print("\n=== Git operations completed successfully ===")
+        else:
+            print("\n=== Git operations failed ===")
+            
     except Exception as e:
         print(f"Error saving log file: {e}")
