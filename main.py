@@ -95,24 +95,12 @@ def push_to_github():
             print("Please ensure GITHUB_TOKEN is set in your .env file")
             return False
         
-        # Configure Git identity
-        print("Configuring Git identity...")
-        git_config_commands = [
-            ["git", "config", "--global", "user.name", "Avail SDK Nightly Checker"],
-            ["git", "config", "--global", "user.email", "noreply@avail.io"]
-        ]
-        
-        for cmd in git_config_commands:
-            print(f"Running: {' '.join(cmd)}")
-            result = subprocess.run(
-                cmd,
-                cwd="/root/desktop",
-                capture_output=True,
-                text=True
-            )
-            if result.returncode != 0:
-                print(f"Git config failed: {result.stderr.strip()}")
-                return False
+        # Get email for Git identity
+        email = os.environ.get("EMAIL")
+        if not email:
+            print("Error: EMAIL not found in environment variables")
+            print("Please ensure EMAIL is set in your .env file")
+            return False
         
         # Stage changes
         print("\nStaging changes...")
@@ -138,10 +126,11 @@ def push_to_github():
             print("No changes to commit")
             return True
         
-        # Commit changes
+        # Commit changes with one-time author settings
         print("\nCommitting changes...")
         commit_result = subprocess.run(
-            ["git", "commit", "-m", f"Pushing log result of run at {current_time}"],
+            ["git", "-c", "user.name=Avail SDK Nightly Checker", "-c", f"user.email={email}", 
+             "commit", "-m", f"Pushing log result of run at {current_time}"],
             cwd="/root/desktop",
             capture_output=True,
             text=True
@@ -172,9 +161,9 @@ def push_to_github():
         return False
 
 try:
-
-    # Force scripts to flush output immediately
+    # Force scripts to flush output immediately and add all required paths
     env = os.environ.copy()
+    env["PATH"] = "/root/.nvm/versions/node/v22.14.0/bin:/root/.local/share/pnpm:/root/.cargo/bin:/usr/local/go/bin:/usr/bin:/bin:/usr/local/bin:" + env.get("PATH", "")
     env["PYTHONUNBUFFERED"] = "1"
 
     # Execute the Avail-js environment setup script
