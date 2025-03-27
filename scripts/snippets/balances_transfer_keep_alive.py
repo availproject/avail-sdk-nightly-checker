@@ -29,12 +29,12 @@ GO_TARGET_FILE = os.path.join(GO_TARGET_DIR, "main.go")
 # Path to the results JSON file
 RESULTS_FILE = "/root/desktop/run-results.json"
 
-# URL of the raw markdown file for da-submit-data
-url = "https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-submit-data/page.mdx"
+# URL of the raw markdown file for balances-transfer-keep-alive
+url = "https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-keep-alive/page.mdx"
 
 
 def process_javascript():
-    """Process JavaScript SDK submission"""
+    """Process JavaScript SDK balances transfer keep alive"""
     print("\n===== Processing JavaScript SDK =====")
     result = False
     
@@ -86,17 +86,17 @@ def process_javascript():
     # Run the command
     cmd_result = run_command(run_cmd, TS_TARGET_DIR)
     
-    if cmd_result and cmd_result.returncode == 0 and "Data submission completed successfully" in cmd_result.stdout:
+    if cmd_result and cmd_result.returncode == 0 and "Transfer completed successfully" in cmd_result.stdout:
         result = True
-        print("JavaScript data submission was successful!")
+        print("JavaScript transfer keep alive was successful!")
     else:
-        print("JavaScript data submission failed or didn't complete successfully")
+        print("JavaScript transfer keep alive failed or didn't complete successfully")
     
     update_result("avail_js", result, __file__)
     return result
 
 def process_rust():
-    """Process Rust SDK submission"""
+    """Process Rust SDK balances transfer keep alive"""
     print("\n===== Processing Rust SDK =====")
     result = False
     
@@ -148,17 +148,17 @@ def process_rust():
     # Run the extracted command
     cmd_result = run_command(rust_run_cmd, RUST_TARGET_DIR)
     
-    if cmd_result and cmd_result.returncode == 0 and "Data Submission finished correctly" in cmd_result.stdout:
+    if cmd_result and cmd_result.returncode == 0 and "transfer completed successfully" in cmd_result.stdout:
         result = True
-        print("Rust data submission was successful!")
+        print("Rust transfer keep alive was successful!")
     else:
-        print("Rust data submission failed or didn't complete successfully")
+        print("Rust transfer keep alive failed or didn't complete successfully")
     
     update_result("avail_rust", result, __file__)
     return result
 
 def process_go():
-    """Process Go SDK submission"""
+    """Process Go SDK balances transfer keep alive"""
     print("\n===== Processing Go SDK =====")
     result = False
     
@@ -210,17 +210,17 @@ def process_go():
     # Run the extracted command
     cmd_result = run_command(go_run_cmd, GO_TARGET_DIR)
     
-    if cmd_result and cmd_result.returncode == 0 and "Data submission completed successfully" in cmd_result.stdout:
+    if cmd_result and cmd_result.returncode == 0 and "Transfer completed successfully" in cmd_result.stdout:
         result = True
-        print("Go data submission was successful!")
+        print("Go transfer keep alive was successful!")
     else:
-        print("Go data submission failed or didn't complete successfully")
+        print("Go transfer keep alive failed or didn't complete successfully")
     
     update_result("avail_go", result, __file__)
     return result
 
 def main():
-    print("=== Running DA Submit Data Test for All SDKs ===")
+    print("=== Running Balances Transfer Keep Alive Test for All SDKs ===")
     
     # Process each SDK
     js_result = process_javascript()
@@ -229,9 +229,9 @@ def main():
     
     # Print summary of results
     print("\n=== Test Results Summary ===")
-    print(f"JavaScript DA Submit Data: {'✅ Success' if js_result else '❌ Failed'}")
-    print(f"Rust DA Submit Data: {'✅ Success' if rust_result else '❌ Failed'}")
-    print(f"Go DA Submit Data: {'✅ Success' if go_result else '❌ Failed'}")
+    print(f"JavaScript Balances Transfer Keep Alive: {'✅ Success' if js_result else '❌ Failed'}")
+    print(f"Rust Balances Transfer Keep Alive: {'✅ Success' if rust_result else '❌ Failed'}")
+    print(f"Go Balances Transfer Keep Alive: {'✅ Success' if go_result else '❌ Failed'}")
     
     # Print machine-readable results for potential parsing by other scripts
     print("\nMachine-readable results:")
