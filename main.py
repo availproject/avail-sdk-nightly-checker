@@ -275,67 +275,63 @@ try:
         sys.exit(1)
     print("\n================================================")
 
-    # Executing the data submission script
-    print("\n=== Running data submission script ===")
+    # Define a list of script paths and their descriptions
+    snippet_scripts = [
+        {
+            "name": "Data Submission",
+            "path": "scripts/snippets/da_submit_data.py"
+        },
+        {
+            "name": "Create Application Key",
+            "path": "scripts/snippets/da_create_application_key.py"
+        },
+        {
+            "name": "Balances Transfer Keep Alive",
+            "path": "scripts/snippets/balances_transfer_keep_alive.py"
+        },
+        {
+            "name": "Balances Transfer Allow Death",
+            "path": "scripts/snippets/balances_transfer_allow_death.py"
+        }
+    ]
 
-    da_submit_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts/snippets/da_submit_data.py")
-
-    # Execute the script as a subprocess with real-time output streaming
-    print("Data submission script output:")
-    try:
-        # Use a different approach to run the script to get real-time output
-        process = subprocess.Popen(
-            ["python", da_submit_script],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            bufsize=1,  # Line buffered
-            env=env  # Use the same env with PYTHONUNBUFFERED=1
-        )
+    # Execute all snippet scripts in a loop
+    for script in snippet_scripts:
+        script_name = script["name"]
+        script_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), script["path"])
         
-        # Stream output in real-time
-        for line in iter(process.stdout.readline, ''):
-            print(line, end='')  # Print each line as it comes
+        print(f"\n=== Running {script_name} script ===")
+        print(f"Script path: {script_path}")
         
-        # Wait for the process to complete and get return code
-        return_code = process.wait()
-        print(f"\nData submission script completed with return code: {return_code}")
+        try:
+            # Use Popen for real-time output streaming
+            process = subprocess.Popen(
+                ["python", script_path],
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+                bufsize=1,  # Line buffered
+                env=env  # Use the same env with PYTHONUNBUFFERED=1
+            )
+            
+            # Stream output in real-time
+            for line in iter(process.stdout.readline, ''):
+                print(line, end='')  # Print each line as it comes
+            
+            # Wait for the process to complete and get return code
+            return_code = process.wait()
+            print(f"\n{script_name} script completed with return code: {return_code}")
+            
+            # Optionally handle non-zero return codes
+            if return_code != 0:
+                print(f"WARNING: {script_name} script returned non-zero exit code: {return_code}")
+                # Uncomment if you want to exit on any script failure
+                # sys.exit(return_code)
+                
+        except Exception as e:
+            print(f"Error running {script_name} script: {e}")
         
-    except Exception as e:
-        print(f"Error running data submission script: {e}")
-
-    print("\n================================================")
-
-    # Executing the create application key script
-    print("\n=== Running create application key script ===")
-
-    da_create_application_key_script = os.path.join(os.path.dirname(os.path.abspath(__file__)), "scripts/snippets/da_create_application_key.py")
-    
-    # Execute the script as a subprocess with real-time output streaming
-    print("Create application key script output:")
-    try:
-        # Use a different approach to run the script to get real-time output
-        process = subprocess.Popen(
-            ["python", da_create_application_key_script],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.STDOUT,
-            text=True,
-            bufsize=1,  # Line buffered
-            env=env  # Use the same env with PYTHONUNBUFFERED=1
-        )
-        
-        # Stream output in real-time
-        for line in iter(process.stdout.readline, ''):
-            print(line, end='')  # Print each line as it comes
-        
-        # Wait for the process to complete and get return code
-        return_code = process.wait()
-        print(f"\nCreate application key script completed with return code: {return_code}")
-        
-    except Exception as e:
-        print(f"Error running create application key script: {e}")
-
-    print("\n================================================")
+        print("\n================================================")
 
     # Clean up by removing all SDK directories
     print("\n=== Cleaning up environment directories ===")
