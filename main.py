@@ -320,6 +320,26 @@ try:
         {
             "name": "DA App Keys",
             "path": "scripts/snippets/da_app_keys.py"
+        },
+        {
+            "name": "DA Submission using txHash and blockHash",
+            "path": "scripts/snippets/da_submission_using_txHash_blockHash.py"
+        },
+        {
+            "name": "DA Submission using App ID",
+            "path": "scripts/snippets/da_submission_using_appID.py"
+        },
+        {
+            "name": "All DA Submissions for a given block",
+            "path": "scripts/snippets/da_all_da_submissions.py"
+        },
+        {
+            "name": "All Transactions by Signer",
+            "path": "scripts/snippets/da_all_transactions_by_signer.py"
+        },
+        {
+            "name": "Fetch All Transactions",
+            "path": "scripts/snippets/fetch_all_transactions.py"
         }
     ]
 
