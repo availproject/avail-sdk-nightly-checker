@@ -1,5 +1,5 @@
 {
-  "last_run_timestamp": "2025-03-30T19:20:24.565777",
+  "last_run_timestamp": "2025-03-30T19:43:25.068991",
   "results": {
     "avail_js_da_submit_data": true,
     "avail_rust_da_submit_data": true,
@@ -8,10 +8,10 @@
     "avail_rust_da_create_application_key": true,
     "avail_go_da_create_application_key": true,
     "avail_js_balances_transfer_keep_alive": true,
-    "avail_rust_balances_transfer_keep_alive": false,
+    "avail_rust_balances_transfer_keep_alive": true,
     "avail_go_balances_transfer_keep_alive": true,
     "avail_js_balances_transfer_allow_death": true,
-    "avail_rust_balances_transfer_allow_death": false,
+    "avail_rust_balances_transfer_allow_death": true,
     "avail_go_balances_transfer_allow_death": true,
     "avail_js_da_submit_data_from_docs_section": true,
     "avail_rust_da_submit_data_from_docs_section": true,
