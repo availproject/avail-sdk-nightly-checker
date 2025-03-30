@@ -1,5 +1,5 @@
 {
-  "last_run_timestamp": "2025-03-30T17:09:43.172713",
+  "last_run_timestamp": "2025-03-30T17:16:22.468726",
   "results": {
     "avail_js_da_submit_data": false,
     "avail_rust_da_submit_data": false,
@@ -16,11 +16,11 @@
     "avail_js_da_submit_data_from_docs_section": true,
     "avail_rust_da_submit_data_from_docs_section": true,
     "avail_go_da_submit_data_from_docs_section": true,
-    "avail_js_system_account": false,
-    "avail_rust_system_account": false,
-    "avail_go_system_account": false,
-    "avail_js_system_account_from_docs_section": false,
-    "avail_rust_system_account_from_docs_section": false,
-    "avail_go_system_account_from_docs_section": false
+    "avail_js_system_account": true,
+    "avail_rust_system_account": true,
+    "avail_go_system_account": true,
+    "avail_js_system_account_from_docs_section": true,
+    "avail_rust_system_account_from_docs_section": true,
+    "avail_go_system_account_from_docs_section": true
   }
 }
