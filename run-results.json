@@ -1,5 +1,5 @@
 {
-  "last_run_timestamp": "2025-03-30T16:14:00.000554",
+  "last_run_timestamp": "2025-03-30T16:27:22.583351",
   "results": {
     "avail_js_da_submit_data": false,
     "avail_rust_da_submit_data": false,
@@ -21,6 +21,9 @@
     "avail_go_system_account": false,
     "avail_js_system_account_from_docs_section": false,
     "avail_rust_system_account_from_docs_section": false,
-    "avail_go_system_account_from_docs_section": false
+    "avail_go_system_account_from_docs_section": false,
+    "avail_js_helper_functions": true,
+    "avail_rust_helper_functions": true,
+    "avail_go_helper_functions": true
   }
 }
