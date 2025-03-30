@@ -28,16 +28,17 @@ Command execution succeeded
 Found command cmd3: pnpm add avail-js-sdk@0.4.0
 Running command: pnpm add avail-js-sdk@0.4.0
 Command output: Progress: resolved 1, reused 0, downloaded 0, added 0
-Progress: resolved 1, reused 1, downloaded 0, added 0
 Progress: resolved 2, reused 2, downloaded 0, added 0
+Progress: resolved 3, reused 2, downloaded 0, added 0
 Progress: resolved 18, reused 18, downloaded 0, added 0
 Progress: resolved 19, reused 18, downloaded 0, added 0
+Progress: resolved 27, reused 26, downloaded 0, added 0
 Progress: resolved 36, reused 36, downloaded 0, added 0
-Progress: resolved 38, reused 38, downloaded 0, added 0
-Progress: resolved 56, reused 56, downloaded 0, added 0
-Progress: resolved 59, reused 59, downloaded 0, added 0
+Progress: resolved 39, reused 39, downloaded 0, added 0
+Progress: resolved 58, reused 58, downloaded 0, added 0
+Progress: resolved 59, reused 58, downloaded 0, added 0
 Progress: resolved 62, reused 62, downloaded 0, added 0
-Progress: resolved 63, reused 62, downloaded 0, added 0
+Progress: resolved 63, reused 63, downloaded 0, added 0
 Progress: resolved 69, reused 69, downloaded 0, added 0
  WARN  1 deprecated subdependencies found: @substrate/connect@0.8.11
 Packages: +70
@@ -47,7 +48,7 @@ Progress: resolved 70, reused 70, downloaded 0, added 70, done
 dependencies:
 + avail-js-sdk 0.4.0
 
-Done in 12.7s using pnpm v10.6.3
+Done in 13.7s using pnpm v10.6.3
 
 Command execution succeeded
 Found command cmd5: touch tsconfig.json
@@ -61,7 +62,7 @@ Running command: pnpm add dotenv && touch .env
 Detected compound command with 2 parts
 Running part 1/2: pnpm add dotenv
 Running command: pnpm add dotenv
-Command output: Progress: resolved 0, reused 1, downloaded 0, added 0
+Command output: Progress: resolved 1, reused 0, downloaded 0, added 0
  WARN  1 deprecated subdependencies found: @substrate/connect@0.8.11
 Packages: +1
 +
@@ -70,7 +71,7 @@ Progress: resolved 71, reused 71, downloaded 0, added 1, done
 dependencies:
 + dotenv 16.4.7
 
-Done in 1s using pnpm v10.6.3
+Done in 974ms using pnpm v10.6.3
 
 Running part 2/2: touch .env
 Running command: touch .env
@@ -124,8 +125,6 @@ Cargo build stderr:
      Locking 1063 packages to latest compatible versions
       Adding crypto-mac v0.11.0 (available: v0.11.1)
       Adding unicode-normalization v0.1.22 (available: v0.1.24)
- Downloading crates ...
-  Downloaded socket2 v0.5.9
    Compiling proc-macro2 v1.0.94
    Compiling unicode-ident v1.0.18
    Compiling cfg-if v1.0.0
@@ -139,42 +138,42 @@ Cargo build stderr:
    Compiling indexmap v2.8.0
    Compiling syn v2.0.100
    Compiling autocfg v1.4.0
-   Compiling winnow v0.7.4
    Compiling once_cell v1.21.3
+   Compiling winnow v0.7.4
    Compiling getrandom v0.2.15
    Compiling subtle v2.6.1
    Compiling rustversion v1.0.20
    Compiling rand_core v0.6.4
    Compiling generic-array v0.14.7
    Compiling zerocopy v0.8.24
-   Compiling bytes v1.10.1
    Compiling unicode-xid v0.2.6
+   Compiling bytes v1.10.1
    Compiling const_format_proc_macros v0.2.34
-   Compiling radium v0.7.0
    Compiling byte-slice-cast v1.2.3
+   Compiling radium v0.7.0
+   Compiling const_format v0.2.34
    Compiling tap v1.0.1
    Compiling wyz v0.5.1
-   Compiling smallvec v1.14.0
-   Compiling const_format v0.2.34
-   Compiling funty v2.0.0
    Compiling ppv-lite86 v0.2.21
+   Compiling funty v2.0.0
+   Compiling smallvec v1.14.0
    Compiling arrayvec v0.7.6
    Compiling byteorder v1.5.0
-   Compiling bitvec v1.0.1
    Compiling const-oid v0.9.6
+   Compiling bitvec v1.0.1
    Compiling memchr v2.7.4
    Compiling shlex v1.3.0
    Compiling cc v1.2.17
-   Compiling rand_chacha v0.3.1
    Compiling serde_derive v1.0.219
    Compiling zeroize_derive v1.4.2
+   Compiling zeroize v1.8.1
    Compiling impl-trait-for-tuples v0.2.3
    Compiling derive_more-impl v1.0.0
-   Compiling zeroize v1.8.1
+   Compiling rand_chacha v0.3.1
    Compiling static_assertions v1.1.0
-   Compiling block-buffer v0.10.4
-   Compiling crypto-common v0.1.6
    Compiling rand v0.8.5
+   Compiling crypto-common v0.1.6
+   Compiling block-buffer v0.10.4
    Compiling cpufeatures v0.2.17
    Compiling digest v0.10.7
    Compiling parity-scale-codec v3.7.4
@@ -185,56 +184,56 @@ Cargo build stderr:
    Compiling yoke-derive v0.7.5
    Compiling itoa v1.0.15
    Compiling zerovec-derive v0.10.3
-   Compiling zerofrom v0.1.6
    Compiling derive_more v1.0.0
-   Compiling yoke v0.7.5
+   Compiling zerofrom v0.1.6
    Compiling displaydoc v0.2.5
+   Compiling yoke v0.7.5
    Compiling keccak v0.1.5
-   Compiling zerocopy v0.7.35
    Compiling zerovec v0.10.4
-   Compiling arrayref v0.3.9
+   Compiling zerocopy v0.7.35
    Compiling crunchy v0.2.3
+   Compiling arrayref v0.3.9
    Compiling writeable v0.5.5
    Compiling icu_locid_transform_data v1.5.1
    Compiling litemap v0.7.5
-   Compiling serde_spanned v0.6.8
-   Compiling toml_datetime v0.6.8
-   Compiling log v0.4.27
-   Compiling icu_provider_macros v1.5.0
-   Compiling toml_edit v0.22.24
-   Compiling icu_properties_data v1.5.1
    Compiling tinystr v0.7.6
-   Compiling regex-syntax v0.8.5
+   Compiling icu_provider_macros v1.5.0
    Compiling icu_locid v1.5.0
-   Compiling tracing-core v0.1.33
+   Compiling regex-syntax v0.8.5
+   Compiling toml_datetime v0.6.8
+   Compiling serde_spanned v0.6.8
+   Compiling toml_edit v0.22.24
+   Compiling log v0.4.27
+   Compiling icu_properties_data v1.5.1
    Compiling icu_provider v1.5.0
+   Compiling tracing-core v0.1.33
+   Compiling futures-core v0.3.31
    Compiling constant_time_eq v0.3.1
    Compiling icu_normalizer_data v1.5.1
-   Compiling futures-core v0.3.31
    Compiling icu_locid_transform v1.5.0
    Compiling proc-macro-crate v3.3.0
    Compiling icu_collections v1.5.0
    Compiling ahash v0.8.11
-   Compiling parity-scale-codec-derive v3.7.4
-   Compiling scale-info-derive v2.11.6
    Compiling icu_properties v1.5.1
    Compiling hex v0.4.3
    Compiling tracing-attributes v0.1.28
-   Compiling lock_api v0.4.12
    Compiling slab v0.4.9
-   Compiling parking_lot_core v0.9.10
-   Compiling utf16_iter v1.0.5
-   Compiling futures-sink v0.3.31
-   Compiling write16 v1.0.0
+   Compiling parity-scale-codec-derive v3.7.4
+   Compiling scale-info-derive v2.11.6
+   Compiling lock_api v0.4.12
    Compiling utf8_iter v1.0.4
    Compiling ryu v1.0.20
+   Compiling parking_lot_core v0.9.10
+   Compiling futures-sink v0.3.31
+   Compiling write16 v1.0.0
+   Compiling utf16_iter v1.0.5
    Compiling icu_normalizer v1.5.0
    Compiling tracing v0.1.41
-   Compiling scale-info v2.11.6
-   Compiling rustc-hex v2.1.0
-   Compiling futures-io v0.3.31
-   Compiling thiserror v1.0.69
    Compiling scopeguard v1.2.0
+   Compiling rustc-hex v2.1.0
+   Compiling thiserror v1.0.69
+   Compiling futures-io v0.3.31
+   Compiling scale-info v2.11.6
    Compiling idna_adapter v1.2.0
    Compiling thiserror-impl v1.0.69
    Compiling percent-encoding v2.3.1
@@ -249,12 +248,12 @@ Cargo build stderr:
    Compiling serde_json v1.0.140
    Compiling url v2.5.4
    Compiling sha2 v0.10.8
-   Compiling indexmap v1.9.3
    Compiling futures-util v0.3.31
+   Compiling indexmap v1.9.3
    Compiling aho-corasick v1.1.3
-   Compiling lazy_static v1.5.0
-   Compiling fnv v1.0.7
    Compiling hashbrown v0.12.3
+   Compiling fnv v1.0.7
+   Compiling lazy_static v1.5.0
    Compiling either v1.15.0
    Compiling regex-automata v0.4.9
    Compiling semver v1.0.26
@@ -266,13 +265,13 @@ Cargo build stderr:
    Compiling sha3 v0.10.8
    Compiling regex v1.11.1
    Compiling twox-hash v1.6.3
-   Compiling rustix v0.38.44
-   Compiling anyhow v1.0.97
-   Compiling sp-std v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling prettyplease v0.2.31
-   Compiling target-lexicon v0.12.16
-   Compiling fallible-iterator v0.2.0
    Compiling io-lifetimes v1.0.11
+   Compiling rustix v0.38.44
+   Compiling fallible-iterator v0.2.0
+   Compiling target-lexicon v0.12.16
+   Compiling anyhow v1.0.97
+   Compiling prettyplease v0.2.31
+   Compiling sp-std v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling gimli v0.27.3
    Compiling Inflector v0.11.4
    Compiling curve25519-dalek v4.1.3
@@ -285,19 +284,19 @@ Cargo build stderr:
    Compiling crc32fast v1.4.2
    Compiling bitflags v2.9.0
    Compiling linux-raw-sys v0.4.15
-   Compiling rustix v0.36.17
-   Compiling base64 v0.22.1
    Compiling paste v1.0.15
-   Compiling wasmtime-types v8.0.1
+   Compiling base64 v0.22.1
+   Compiling rustix v0.36.17
    Compiling object v0.30.4
    Compiling futures-executor v0.3.31
+   Compiling wasmtime-types v8.0.1
    Compiling wasmtime-runtime v8.0.1
    Compiling curve25519-dalek-derive v0.1.1
-   Compiling rustc-demangle v0.1.24
-   Compiling cpp_demangle v0.3.5
    Compiling expander v2.2.1
-   Compiling linux-raw-sys v0.1.4
    Compiling bitflags v1.3.2
+   Compiling linux-raw-sys v0.1.4
+   Compiling cpp_demangle v0.3.5
+   Compiling rustc-demangle v0.1.24
    Compiling wasmtime-environ v8.0.1
    Compiling libsecp256k1-core v0.3.0
    Compiling memfd v0.6.4
@@ -309,21 +308,21 @@ Cargo build stderr:
    Compiling psm v0.1.25
    Compiling wasmtime-jit-debug v8.0.1
    Compiling wasmtime-asm-macros v8.0.1
-   Compiling bitcoin-internals v0.2.0
    Compiling regex-syntax v0.6.29
+   Compiling bitcoin-internals v0.2.0
    Compiling ref-cast v1.0.24
    Compiling addr2line v0.19.0
-   Compiling impl-serde v0.4.0
    Compiling bincode v1.3.3
    Compiling regex-automata v0.1.10
+   Compiling impl-serde v0.4.0
    Compiling merlin v3.0.0
    Compiling sp-debug-derive v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling ref-cast-impl v1.0.24
    Compiling wasmtime-jit-icache-coherence v8.0.1
    Compiling wasmtime v8.0.1
+   Compiling iana-time-zone v0.1.62
    Compiling tinyvec_macros v0.1.1
    Compiling hash-db v0.16.0
-   Compiling iana-time-zone v0.1.62
    Compiling chrono v0.4.40
    Compiling tinyvec v1.9.0
    Compiling wasmtime-jit v8.0.1
@@ -331,23 +330,23 @@ Cargo build stderr:
    Compiling libsecp256k1-gen-ecmult v0.3.0
    Compiling libsecp256k1-gen-genmult v0.3.0
    Compiling sharded-slab v0.1.7
-   Compiling tracing-log v0.1.4
    Compiling tracing-serde v0.1.3
+   Compiling tracing-log v0.1.4
    Compiling serde_bytes v0.11.17
    Compiling getrandom_or_panic v0.0.3
-   Compiling block-buffer v0.9.0
-   Compiling crypto-mac v0.11.0
    Compiling crypto-mac v0.8.0
+   Compiling crypto-mac v0.11.0
+   Compiling block-buffer v0.9.0
    Compiling secp256k1-sys v0.9.2
    Compiling thread_local v1.1.8
-   Compiling hex-conservative v0.1.2
-   Compiling ansi_term v0.12.1
    Compiling opaque-debug v0.3.1
+   Compiling ansi_term v0.12.1
+   Compiling hex-conservative v0.1.2
+   Compiling ss58-registry v1.51.0
+   Compiling tracing-subscriber v0.2.25
    Compiling bitcoin_hashes v0.13.0
    Compiling sha2 v0.9.9
-   Compiling tracing-subscriber v0.2.25
    Compiling hmac v0.8.1
-   Compiling ss58-registry v1.51.0
    Compiling schnorrkel v0.11.4
    Compiling libsecp256k1 v0.7.2
    Compiling unicode-normalization v0.1.22
@@ -362,31 +361,31 @@ Cargo build stderr:
    Compiling primitive-types v0.12.2
    Compiling sp-wasm-interface v20.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling bip39 v2.1.0
-   Compiling sp-tracing v16.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hmac-drbg v0.3.0
+   Compiling sp-tracing v16.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling pbkdf2 v0.8.0
    Compiling hmac v0.11.0
    Compiling sp-runtime-interface-proc-macro v17.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling bounded-collections v0.2.4
    Compiling num-format v0.4.4
-   Compiling derive-syn-parse v0.2.0
    Compiling dyn-clonable-impl v0.9.2
    Compiling thiserror-impl v2.0.12
-   Compiling object v0.36.7
+   Compiling derive-syn-parse v0.2.0
    Compiling syn v1.0.109
+   Compiling object v0.36.7
    Compiling dyn-clone v1.0.19
-   Compiling sp-runtime-interface v24.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling dyn-clonable v0.9.2
+   Compiling sp-runtime-interface v24.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling substrate-bip39 v0.4.6
    Compiling secp256k1 v0.28.2
    Compiling ed25519-zebra v4.0.3
    Compiling sp-crypto-hashing v0.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hash256-std-hasher v0.15.2
    Compiling secrecy v0.8.0
+   Compiling bs58 v0.5.1
+   Compiling array-bytes v6.2.3
    Compiling adler2 v2.0.0
    Compiling gimli v0.31.1
-   Compiling array-bytes v6.2.3
-   Compiling bs58 v0.5.1
    Compiling miniz_oxide v0.8.5
    Compiling sp-core v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling addr2line v0.24.2
@@ -394,18 +393,18 @@ Cargo build stderr:
    Compiling uint v0.10.0
    Compiling impl-serde v0.5.0
    Compiling tokio-macros v2.5.0
-   Compiling mio v1.0.3
-   Compiling socket2 v0.5.9
    Compiling signal-hook-registry v1.4.2
+   Compiling socket2 v0.5.9
+   Compiling mio v1.0.3
    Compiling ident_case v1.0.1
    Compiling strsim v0.11.1
+   Compiling backtrace v0.3.74
    Compiling tokio v1.44.1
    Compiling darling_core v0.20.11
-   Compiling backtrace v0.3.74
    Compiling primitive-types v0.13.1
    Compiling memory-db v0.32.0
-   Compiling trie-root v0.18.0
    Compiling trie-db v0.28.0
+   Compiling trie-root v0.18.0
    Compiling schnellru v0.2.4
    Compiling http v1.3.1
    Compiling ring v0.17.14
@@ -414,40 +413,40 @@ Cargo build stderr:
    Compiling darling_macro v0.20.11
    Compiling sp-panic-handler v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-io v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling same-file v1.0.6
    Compiling tiny-keccak v2.0.2
+   Compiling same-file v1.0.6
    Compiling walkdir v2.5.0
    Compiling darling v0.20.11
-   Compiling sp-state-machine v0.35.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-keystore v0.34.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling ed25519-dalek v2.1.1
+   Compiling sp-state-machine v0.35.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling integer-sqrt v0.1.5
    Compiling toml v0.8.20
-   Compiling termcolor v1.4.1
-   Compiling untrusted v0.9.0
    Compiling common-path v1.0.0
-   Compiling rustls-pki-types v1.11.0
+   Compiling untrusted v0.9.0
+   Compiling termcolor v1.4.1
    Compiling httparse v1.10.1
+   Compiling rustls-pki-types v1.11.0
    Compiling docify_macros v0.2.9
    Compiling sp-arithmetic v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling http-body v1.0.1
    Compiling async-trait v0.1.88
-   Compiling rustls v0.23.25
    Compiling crossbeam-utils v0.8.21
+   Compiling rustls v0.23.25
    Compiling sp-weights v27.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling const-random-macro v0.1.16
    Compiling docify v0.2.9
    Compiling rustls-webpki v0.103.1
-   Compiling sp-application-crypto v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling tokio-util v0.7.14
    Compiling scale-type-resolver v0.2.0
    Compiling pin-project-internal v1.1.10
    Compiling simple-mermaid v0.1.0 (https://github.com/kianenigma/simple-mermaid.git?rev=e48b187bcfd5cc75111acd9d241f1bd36604344b#e48b187b)
    Compiling wasm-bindgen-shared v0.2.100
-   Compiling sp-runtime v31.0.1 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling scale-bits v0.7.0
-   Compiling const-random v0.1.18
+   Compiling sp-application-crypto v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling pin-project v1.1.10
+   Compiling const-random v0.1.18
+   Compiling sp-runtime v31.0.1 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling der v0.7.9
    Compiling macro_magic_core_macros v0.5.1
    Compiling macro_magic_core v0.5.1
@@ -456,21 +455,21 @@ Cargo build stderr:
    Compiling hmac v0.12.1
    Compiling ff v0.13.1
    Compiling proc-macro-error-attr v1.0.4
-   Compiling atomic-waker v1.1.2
    Compiling bumpalo v3.17.0
-   Compiling futures-timer v3.0.3
+   Compiling atomic-waker v1.1.2
    Compiling base16ct v0.2.0
+   Compiling futures-timer v3.0.3
+   Compiling try-lock v0.2.5
    Compiling rayon-core v1.12.1
    Compiling openssl-probe v0.1.6
-   Compiling try-lock v0.2.5
-   Compiling tokio-rustls v0.26.2
    Compiling want v0.3.1
    Compiling rustls-native-certs v0.8.1
-   Compiling wasm-bindgen-backend v0.2.100
    Compiling sec1 v0.7.3
+   Compiling wasm-bindgen-backend v0.2.100
    Compiling scale-decode v0.16.0
    Compiling h2 v0.4.8
    Compiling group v0.13.0
+   Compiling tokio-rustls v0.26.2
    Compiling crossbeam-deque v0.8.6
    Compiling macro_magic_macros v0.5.1
    Compiling sp-crypto-hashing-proc-macro v0.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
@@ -483,8 +482,8 @@ Cargo build stderr:
    Compiling crypto-bigint v0.5.5
    Compiling proc-macro-error v1.0.4
    Compiling parity-wasm v0.45.0
-   Compiling rustc-hash v2.1.1
    Compiling tower-service v0.3.3
+   Compiling rustc-hash v2.1.1
    Compiling jsonrpsee-core v0.24.9
    Compiling elliptic-curve v0.13.8
    Compiling sp-version v29.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
@@ -502,13 +501,13 @@ Cargo build stderr:
    Compiling frame-support-procedural-tools-derive v11.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling include_dir_macros v0.7.4
    Compiling wasm-bindgen v0.2.100
-   Compiling frame-support-procedural-tools v10.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling frame-decode v0.6.1
    Compiling include_dir v0.7.4
+   Compiling frame-support-procedural-tools v10.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling soketto v0.8.1
-   Compiling scale-encode v0.10.0
-   Compiling dusk-bytes v0.1.7
    Compiling wasm-bindgen-macro v0.2.100
+   Compiling dusk-bytes v0.1.7
+   Compiling scale-encode v0.10.0
    Compiling ecdsa v0.16.9
    Compiling rayon v1.10.0
    Compiling hyper-util v0.1.10
@@ -520,17 +519,17 @@ Cargo build stderr:
    Compiling secp256k1-sys v0.10.1
    Compiling proc-macro-warning v1.84.1
    Compiling tower-layer v0.3.3
-   Compiling base58 v0.2.0
    Compiling yap v0.12.0
+   Compiling base58 v0.2.0
    Compiling frame-support-procedural v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling dusk-bls12_381 v0.11.3
    Compiling tower v0.4.13
    Compiling scale-value v0.18.0
+   Compiling dusk-bls12_381 v0.11.3
    Compiling sp-genesis-builder v0.7.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hyper-rustls v0.27.5
    Compiling subxt-metadata v0.39.0
-   Compiling aquamarine v0.5.0
    Compiling k256 v0.13.4
+   Compiling aquamarine v0.5.0
    Compiling jsonrpsee-client-transport v0.24.9
    Compiling sp-staking v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-inherents v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
@@ -540,17 +539,17 @@ Cargo build stderr:
    Compiling thiserror-impl-no-std v2.0.2
    Compiling derive-where v1.2.7
    Compiling proc-macro-error-attr2 v2.0.0
-   Compiling ahash v0.4.8
+   Compiling utf8parse v0.2.2
    Compiling base64ct v1.7.3
    Compiling tt-call v1.0.9
+   Compiling ahash v0.4.8
    Compiling heck v0.5.0
-   Compiling utf8parse v0.2.2
-   Compiling anstyle-parse v0.2.6
+   Compiling hashbrown v0.9.1
+   Compiling subxt-utils-fetchmetadata v0.39.0
    Compiling subxt-codegen v0.39.0
    Compiling password-hash v0.5.0
-   Compiling hashbrown v0.9.1
    Compiling subxt-core v0.39.0
-   Compiling subxt-utils-fetchmetadata v0.39.0
+   Compiling anstyle-parse v0.2.6
    Compiling proc-macro-error2 v2.0.1
    Compiling thiserror-no-std v2.0.2
    Compiling ethabi-decode v2.0.0 (https://github.com/Snowfork/ethabi-decode.git?branch=master#d39408b5)
@@ -560,15 +559,15 @@ Cargo build stderr:
    Compiling dusk-jubjub v0.12.1
    Compiling binary-merkle-tree v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling itertools v0.9.0
-   Compiling frame-support v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling derive_more v0.99.19
-   Compiling is_terminal_polyfill v1.70.1
+   Compiling frame-support v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling anstyle-query v1.1.2
    Compiling anstyle v1.0.10
    Compiling colorchoice v1.0.3
+   Compiling is_terminal_polyfill v1.70.1
    Compiling anstream v0.6.18
-   Compiling dusk-plonk v0.12.0 (https://github.com/availproject/plonk.git?tag=v0.12.0-polygon-2#6ada57a8)
    Compiling wasm-bindgen-futures v0.4.50
+   Compiling dusk-plonk v0.12.0 (https://github.com/availproject/plonk.git?tag=v0.12.0-polygon-2#6ada57a8)
    Compiling jsonrpsee v0.24.9
    Compiling secp256k1 v0.30.0
    Compiling subxt-macro v0.39.0
@@ -586,7 +585,7 @@ Cargo build stderr:
    Compiling kate-recovery v0.10.0 (https://github.com/availproject/avail-core?tag=core-node-7#70458d54)
    Compiling avail-rust v0.1.5 (https://github.com/availproject/avail-rust?tag=v0.1.5#4878b659)
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 33s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 41s
 
 Cargo build completed successfully
 Rust development environment setup completed successfully!
@@ -650,153 +649,32 @@ Avail-go environment setup completed successfully
 
 === Running Data Submission from Docs Section script ===
 Script path: /root/desktop/scripts/snippets/da_submit_data_from_docs_section.py
-Script directory: /root/desktop/scripts/snippets
-=== Running DA Submit Data Test for All SDKs ===
+Traceback (most recent call last):
+  File "/root/desktop/scripts/snippets/da_submit_data_from_docs_section.py", line 11, in <module>
+    from helper_functions import (
+    ...<6 lines>...
+    )
+  File "/root/desktop/scripts/helper_functions.py", line 154, in <module>
+    url=URL            # URL for markdown (with default)
+        ^^^
+NameError: name 'URL' is not defined
 
-===== Processing JavaScript SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
-Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
-Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
-Running command in /root/desktop/avail-js: ts-node your-file-name.ts
-Command output:
-Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Submitting data to App Id: 89
-Submitting transaction with data...
-Block Hash: 0x23e5e0154f6c5f97743e2fb5d56ab13c8f9f15d4a4004b6e16fc91f0491c8e0f, Block Number: 1582235, Tx Hash: 0xa44e20ce81361c7c9f420473ab9c533d7997dc27feac64a6cd40c4883a445c68, Tx Index: 1
-Data submitted successfully:
-Who: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-DataHash: 0xd92871f83b488631e262173785fc43a9818951188baa933653739bcc33fe8931
-Data submission completed successfully
-
-Error output:
-2025-03-30 15:39:24 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-
-JavaScript data submission was successful!
-Adding missing key: avail_js_da_submit_data_from_docs_section
-Adding missing key: avail_rust_da_submit_data_from_docs_section
-Adding missing key: avail_go_da_submit_data_from_docs_section
-Updated avail_js_da_submit_data_from_docs_section result to True
-
-===== Processing Rust SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
-Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
-Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
-Running command in /root/desktop/avail-rust: cargo run
-Command output:
-Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x05b4c142e39c201fad3321ebe5fe0d29903ad8f6f92b5deaa6c1dfe17acb3d35, Block Number: 1582237, Tx Hash: 0x173804de37c7bb823f6970b115ab52b31b37286a59e5b13c4ff8b617ca1b8010, Tx Index: 1
-Call data: "My Data"
-Data Submission finished correctly
-
-Error output:
-   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.26s
-     Running `target/debug/avail-rust`
-
-Rust data submission was successful!
-Updated avail_rust_da_submit_data_from_docs_section result to True
-
-===== Processing Go SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
-Successfully wiped contents of /root/desktop/avail-go/main.go
-Successfully wrote Go code to /root/desktop/avail-go/main.go
-Running command in /root/desktop/avail-go: go run main.go
-Command output:
-Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x7806e817dd94d32d128701040e90b048bf03d9ca2d806dbdbf26a38142cdeb0e, Block Index: 1582238, Tx Hash: 0x8c09aea3e67411305f24ff2b21ca8fccbce8d00c3b7f8cebfb9fc4d8723af6c8, Tx Index: 1
-Data submission completed successfully
-
-Go data submission was successful!
-Updated avail_go_da_submit_data_from_docs_section result to True
-
-=== Test Results Summary ===
-JavaScript DA Submit Data: ✅ Success
-Rust DA Submit Data: ✅ Success
-Go DA Submit Data: ✅ Success
-
-Machine-readable results:
-js_snippetrunresult = True
-rust_snippetrunresult = True
-go_snippetrunresult = True
-
-Overall test result: ✅ Success
-
-Data Submission from Docs Section script completed with return code: 0
+Data Submission from Docs Section script completed with return code: 1
+WARNING: Data Submission from Docs Section script returned non-zero exit code: 1
 
 ================================================
 
 === Running System Account Fetch script ===
 Script path: /root/desktop/scripts/snippets/system_account.py
-Script directory: /root/desktop/scripts/snippets
-=== Running System Account Fetch Test for All SDKs ===
-
-===== Processing JavaScript SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/system-account/page.mdx
-Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
-Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
-Running command in /root/desktop/avail-js: ts-node your-file-name.ts
-Command output:
-Checking balance for address: 5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
-The following balances are in the smallest units, divide by 10^18 to get the balance in AVAIL
-Free Balance: 14076943428992781091654
-Reserved Balance: 15100000000000000000
-Frozen Balance: 1131938738398108251550
-Account information fetched successfully
-
-Error output:
-2025-03-30 15:40:52 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-
-JavaScript system account fetch failed or didn't complete successfully
-Adding missing key: avail_js_system_account
-Adding missing key: avail_rust_system_account
-Adding missing key: avail_go_system_account
-Updated avail_js_system_account result to False
-
-===== Processing Rust SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/system-account/page.mdx
-Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
-Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
-Running command in /root/desktop/avail-rust: cargo run
-Command output:
-
-Error output:
-   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-error: expected one of `!` or `::`, found `filename`
- --> src/main.rs:1:17
-  |
-1 | showLineNumbers filename="avail-rust"
-  |                 ^^^^^^^^ expected one of `!` or `::`
-
-error: could not compile `avail-rust` (bin "avail-rust") due to 1 previous error
-
-Rust system account fetch failed or didn't complete successfully
-Updated avail_rust_system_account result to False
-
-===== Processing Go SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/system-account/page.mdx
-Successfully wiped contents of /root/desktop/avail-go/main.go
-Successfully wrote Go code to /root/desktop/avail-go/main.go
-Running command in /root/desktop/avail-go: go run main.go
-Command output:
-Free Balance:  14076.943428992781091654 Avail
-Reserved Balance:  15.1 Avail
-Frozen Balance:  1131.93873839810825155 Avail
-Account information fetched successfully
-
-Go system account fetch failed or didn't complete successfully
-Updated avail_go_system_account result to False
-
-=== Test Results Summary ===
-JavaScript System Account Fetch: ❌ Failed
-Rust System Account Fetch: ❌ Failed
-Go System Account Fetch: ❌ Failed
-
-Machine-readable results:
-js_snippetrunresult = False
-rust_snippetrunresult = False
-go_snippetrunresult = False
-
-Overall test result: ❌ Failed
+Traceback (most recent call last):
+  File "/root/desktop/scripts/snippets/system_account.py", line 11, in <module>
+    from helper_functions import (
+    ...<6 lines>...
+    )
+  File "/root/desktop/scripts/helper_functions.py", line 154, in <module>
+    url=URL            # URL for markdown (with default)
+        ^^^
+NameError: name 'URL' is not defined
 
 System Account Fetch script completed with return code: 1
 WARNING: System Account Fetch script returned non-zero exit code: 1
@@ -805,77 +683,15 @@ WARNING: System Account Fetch script returned non-zero exit code: 1
 
 === Running System Account Fetch from Docs Section script ===
 Script path: /root/desktop/scripts/snippets/system_account_from_docs_section.py
-Script directory: /root/desktop/scripts/snippets
-=== Running System Account Fetch Test for All SDKs ===
-
-===== Processing JavaScript SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/query-balances/page.mdx
-Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
-Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
-Running command in /root/desktop/avail-js: ts-node your-file-name.ts
-Command output:
-Checking balance for address: 5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
-The following balances are in the smallest units, divide by 10^18 to get the balance in AVAIL
-Free Balance: 14076943428992781091654
-Reserved Balance: 15100000000000000000
-Frozen Balance: 1131938738398108251550
-Account information fetched successfully
-
-Error output:
-2025-03-30 15:41:10 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-
-JavaScript system account fetch failed or didn't complete successfully
-Adding missing key: avail_js_system_account_from_docs_section
-Adding missing key: avail_rust_system_account_from_docs_section
-Adding missing key: avail_go_system_account_from_docs_section
-Updated avail_js_system_account_from_docs_section result to False
-
-===== Processing Rust SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/query-balances/page.mdx
-Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
-Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
-Running command in /root/desktop/avail-rust: cargo run
-Command output:
-Consumers: 2
-Data: AccountData { free: 24952772355158901621652, reserved: 100000300000000000000, frozen: 100000000000000000000, flags: ExtraFlags(170141183460469231731687303715884105728) }
-Nonce: 215
-Providers: 1
-Sufficients: 0
-Account information fetched successfully
-
-Error output:
-   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.37s
-     Running `target/debug/avail-rust`
-
-Rust system account fetch failed or didn't complete successfully
-Updated avail_rust_system_account_from_docs_section result to False
-
-===== Processing Go SDK =====
-Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/query-balances/page.mdx
-Successfully wiped contents of /root/desktop/avail-go/main.go
-Successfully wrote Go code to /root/desktop/avail-go/main.go
-Running command in /root/desktop/avail-go: go run main.go
-Command output:
-Free Balance:  14076.943428992781091654 Avail
-Reserved Balance:  15.1 Avail
-Frozen Balance:  1131.93873839810825155 Avail
-Account information fetched successfully
-
-Go system account fetch failed or didn't complete successfully
-Updated avail_go_system_account_from_docs_section result to False
-
-=== Test Results Summary ===
-JavaScript System Account Fetch: ❌ Failed
-Rust System Account Fetch: ❌ Failed
-Go System Account Fetch: ❌ Failed
-
-Machine-readable results:
-js_snippetrunresult = False
-rust_snippetrunresult = False
-go_snippetrunresult = False
-
-Overall test result: ❌ Failed
+Traceback (most recent call last):
+  File "/root/desktop/scripts/snippets/system_account_from_docs_section.py", line 11, in <module>
+    from helper_functions import (
+    ...<6 lines>...
+    )
+  File "/root/desktop/scripts/helper_functions.py", line 154, in <module>
+    url=URL            # URL for markdown (with default)
+        ^^^
+NameError: name 'URL' is not defined
 
 System Account Fetch from Docs Section script completed with return code: 1
 WARNING: System Account Fetch from Docs Section script returned non-zero exit code: 1
