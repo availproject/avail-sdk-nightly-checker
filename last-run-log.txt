@@ -28,16 +28,16 @@ Command execution succeeded
 Found command cmd3: pnpm add avail-js-sdk@0.4.0
 Running command: pnpm add avail-js-sdk@0.4.0
 Command output: Progress: resolved 1, reused 0, downloaded 0, added 0
-Progress: resolved 2, reused 1, downloaded 0, added 0
 Progress: resolved 2, reused 2, downloaded 0, added 0
+Progress: resolved 3, reused 2, downloaded 0, added 0
 Progress: resolved 18, reused 18, downloaded 0, added 0
 Progress: resolved 19, reused 18, downloaded 0, added 0
-Progress: resolved 32, reused 32, downloaded 0, added 0
-Progress: resolved 38, reused 38, downloaded 0, added 0
+Progress: resolved 33, reused 33, downloaded 0, added 0
+Progress: resolved 37, reused 36, downloaded 0, added 0
 Progress: resolved 56, reused 56, downloaded 0, added 0
-Progress: resolved 58, reused 58, downloaded 0, added 0
-Progress: resolved 61, reused 61, downloaded 0, added 0
+Progress: resolved 59, reused 59, downloaded 0, added 0
 Progress: resolved 62, reused 62, downloaded 0, added 0
+Progress: resolved 63, reused 62, downloaded 0, added 0
 Progress: resolved 69, reused 69, downloaded 0, added 0
  WARN  1 deprecated subdependencies found: @substrate/connect@0.8.11
 Packages: +70
@@ -47,7 +47,7 @@ Progress: resolved 70, reused 70, downloaded 0, added 70, done
 dependencies:
 + avail-js-sdk 0.4.0
 
-Done in 13.1s using pnpm v10.6.3
+Done in 13.4s using pnpm v10.6.3
 
 Command execution succeeded
 Found command cmd5: touch tsconfig.json
@@ -70,7 +70,7 @@ Progress: resolved 71, reused 71, downloaded 0, added 1, done
 dependencies:
 + dotenv 16.4.7
 
-Done in 1s using pnpm v10.6.3
+Done in 1.3s using pnpm v10.6.3
 
 Running part 2/2: touch .env
 Running command: touch .env
@@ -152,15 +152,15 @@ Cargo build stderr:
    Compiling byte-slice-cast v1.2.3
    Compiling tap v1.0.1
    Compiling wyz v0.5.1
-   Compiling ppv-lite86 v0.2.21
    Compiling const_format v0.2.34
    Compiling smallvec v1.14.0
    Compiling funty v2.0.0
    Compiling arrayvec v0.7.6
-   Compiling memchr v2.7.4
+   Compiling ppv-lite86 v0.2.21
    Compiling const-oid v0.9.6
-   Compiling byteorder v1.5.0
+   Compiling memchr v2.7.4
    Compiling bitvec v1.0.1
+   Compiling byteorder v1.5.0
    Compiling shlex v1.3.0
    Compiling cc v1.2.17
    Compiling rand_chacha v0.3.1
@@ -169,8 +169,8 @@ Cargo build stderr:
    Compiling serde_derive v1.0.219
    Compiling zeroize_derive v1.4.2
    Compiling impl-trait-for-tuples v0.2.3
-   Compiling zeroize v1.8.1
    Compiling derive_more-impl v1.0.0
+   Compiling zeroize v1.8.1
    Compiling crypto-common v0.1.6
    Compiling block-buffer v0.10.4
    Compiling cpufeatures v0.2.17
@@ -189,25 +189,25 @@ Cargo build stderr:
    Compiling yoke v0.7.5
    Compiling keccak v0.1.5
    Compiling crunchy v0.2.3
+   Compiling zerocopy v0.7.35
    Compiling zerovec v0.10.4
    Compiling arrayref v0.3.9
-   Compiling zerocopy v0.7.35
    Compiling litemap v0.7.5
-   Compiling icu_locid_transform_data v1.5.1
    Compiling writeable v0.5.5
+   Compiling icu_locid_transform_data v1.5.1
    Compiling icu_provider_macros v1.5.0
    Compiling icu_properties_data v1.5.1
-   Compiling toml_datetime v0.6.8
-   Compiling serde_spanned v0.6.8
-   Compiling log v0.4.27
-   Compiling tinystr v0.7.6
-   Compiling toml_edit v0.22.24
-   Compiling icu_locid v1.5.0
    Compiling regex-syntax v0.8.5
+   Compiling tinystr v0.7.6
+   Compiling icu_locid v1.5.0
+   Compiling serde_spanned v0.6.8
+   Compiling toml_datetime v0.6.8
+   Compiling log v0.4.27
+   Compiling toml_edit v0.22.24
    Compiling tracing-core v0.1.33
    Compiling icu_provider v1.5.0
-   Compiling constant_time_eq v0.3.1
    Compiling icu_normalizer_data v1.5.1
+   Compiling constant_time_eq v0.3.1
    Compiling futures-core v0.3.31
    Compiling icu_locid_transform v1.5.0
    Compiling icu_collections v1.5.0
@@ -216,86 +216,86 @@ Cargo build stderr:
    Compiling icu_properties v1.5.1
    Compiling hex v0.4.3
    Compiling tracing-attributes v0.1.28
+   Compiling lock_api v0.4.12
    Compiling parity-scale-codec-derive v3.7.4
    Compiling scale-info-derive v2.11.6
    Compiling slab v0.4.9
-   Compiling lock_api v0.4.12
    Compiling parking_lot_core v0.9.10
-   Compiling utf16_iter v1.0.5
-   Compiling futures-sink v0.3.31
    Compiling ryu v1.0.20
-   Compiling write16 v1.0.0
    Compiling utf8_iter v1.0.4
+   Compiling write16 v1.0.0
+   Compiling futures-sink v0.3.31
+   Compiling utf16_iter v1.0.5
    Compiling icu_normalizer v1.5.0
    Compiling tracing v0.1.41
-   Compiling rustc-hex v2.1.0
    Compiling futures-io v0.3.31
+   Compiling rustc-hex v2.1.0
    Compiling scopeguard v1.2.0
    Compiling thiserror v1.0.69
-   Compiling scale-info v2.11.6
    Compiling idna_adapter v1.2.0
    Compiling thiserror-impl v1.0.69
    Compiling percent-encoding v2.3.1
+   Compiling scale-info v2.11.6
    Compiling form_urlencoded v1.2.1
    Compiling parking_lot v0.12.3
    Compiling idna v1.0.3
    Compiling fixed-hash v0.8.0
    Compiling futures-channel v0.3.31
    Compiling futures-macro v0.3.31
+   Compiling serde_json v1.0.140
    Compiling futures-task v0.3.31
    Compiling pin-utils v0.1.0
-   Compiling serde_json v1.0.140
    Compiling url v2.5.4
    Compiling sha2 v0.10.8
-   Compiling indexmap v1.9.3
    Compiling futures-util v0.3.31
+   Compiling indexmap v1.9.3
    Compiling aho-corasick v1.1.3
-   Compiling lazy_static v1.5.0
    Compiling fnv v1.0.7
-   Compiling hashbrown v0.12.3
    Compiling either v1.15.0
+   Compiling hashbrown v0.12.3
+   Compiling lazy_static v1.5.0
    Compiling regex-automata v0.4.9
    Compiling semver v1.0.26
    Compiling allocator-api2 v0.2.21
    Compiling hashbrown v0.13.2
    Compiling num-traits v0.2.19
-   Compiling regex v1.11.1
    Compiling rustc_version v0.4.1
    Compiling blake2b_simd v1.0.3
    Compiling sha3 v0.10.8
+   Compiling regex v1.11.1
    Compiling twox-hash v1.6.3
-   Compiling io-lifetimes v1.0.11
-   Compiling sp-std v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling target-lexicon v0.12.16
    Compiling anyhow v1.0.97
+   Compiling sp-std v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling io-lifetimes v1.0.11
    Compiling fallible-iterator v0.2.0
-   Compiling rustix v0.38.44
+   Compiling target-lexicon v0.12.16
    Compiling prettyplease v0.2.31
+   Compiling rustix v0.38.44
    Compiling gimli v0.27.3
-   Compiling curve25519-dalek v4.1.3
    Compiling Inflector v0.11.4
+   Compiling curve25519-dalek v4.1.3
    Compiling wasmparser v0.102.0
    Compiling cranelift-entity v0.95.1
    Compiling digest v0.9.0
    Compiling num_cpus v1.16.0
-   Compiling memoffset v0.8.0
    Compiling fs-err v2.11.0
+   Compiling memoffset v0.8.0
    Compiling crc32fast v1.4.2
    Compiling rustix v0.36.17
-   Compiling base64 v0.22.1
    Compiling paste v1.0.15
-   Compiling linux-raw-sys v0.4.15
+   Compiling base64 v0.22.1
    Compiling bitflags v2.9.0
+   Compiling linux-raw-sys v0.4.15
    Compiling object v0.30.4
    Compiling futures-executor v0.3.31
    Compiling wasmtime-types v8.0.1
    Compiling wasmtime-runtime v8.0.1
    Compiling curve25519-dalek-derive v0.1.1
-   Compiling bitflags v1.3.2
+   Compiling expander v2.2.1
    Compiling cpp_demangle v0.3.5
+   Compiling bitflags v1.3.2
    Compiling rustc-demangle v0.1.24
    Compiling linux-raw-sys v0.1.4
-   Compiling expander v2.2.1
    Compiling wasmtime-environ v8.0.1
    Compiling libsecp256k1-core v0.3.0
    Compiling memfd v0.6.4
@@ -307,23 +307,23 @@ Cargo build stderr:
    Compiling psm v0.1.25
    Compiling wasmtime-jit-debug v8.0.1
    Compiling wasmtime-asm-macros v8.0.1
-   Compiling regex-syntax v0.6.29
    Compiling ref-cast v1.0.24
+   Compiling regex-syntax v0.6.29
    Compiling bitcoin-internals v0.2.0
    Compiling addr2line v0.19.0
-   Compiling regex-automata v0.1.10
    Compiling impl-serde v0.4.0
    Compiling bincode v1.3.3
+   Compiling regex-automata v0.1.10
    Compiling merlin v3.0.0
    Compiling sp-debug-derive v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling ref-cast-impl v1.0.24
    Compiling wasmtime-jit-icache-coherence v8.0.1
    Compiling iana-time-zone v0.1.62
-   Compiling wasmtime v8.0.1
    Compiling hash-db v0.16.0
    Compiling tinyvec_macros v0.1.1
-   Compiling chrono v0.4.40
+   Compiling wasmtime v8.0.1
    Compiling tinyvec v1.9.0
+   Compiling chrono v0.4.40
    Compiling wasmtime-jit v8.0.1
    Compiling matchers v0.0.1
    Compiling libsecp256k1-gen-genmult v0.3.0
@@ -333,17 +333,17 @@ Cargo build stderr:
    Compiling tracing-log v0.1.4
    Compiling serde_bytes v0.11.17
    Compiling block-buffer v0.9.0
-   Compiling crypto-mac v0.8.0
    Compiling crypto-mac v0.11.0
-   Compiling secp256k1-sys v0.9.2
+   Compiling crypto-mac v0.8.0
    Compiling getrandom_or_panic v0.0.3
+   Compiling secp256k1-sys v0.9.2
    Compiling thread_local v1.1.8
-   Compiling ansi_term v0.12.1
    Compiling hex-conservative v0.1.2
+   Compiling ansi_term v0.12.1
    Compiling opaque-debug v0.3.1
+   Compiling bitcoin_hashes v0.13.0
    Compiling sha2 v0.9.9
    Compiling tracing-subscriber v0.2.25
-   Compiling bitcoin_hashes v0.13.0
    Compiling schnorrkel v0.11.4
    Compiling hmac v0.8.1
    Compiling ss58-registry v1.51.0
@@ -362,14 +362,14 @@ Cargo build stderr:
    Compiling bip39 v2.1.0
    Compiling sp-tracing v16.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hmac-drbg v0.3.0
-   Compiling hmac v0.11.0
    Compiling pbkdf2 v0.8.0
+   Compiling hmac v0.11.0
    Compiling sp-runtime-interface-proc-macro v17.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling bounded-collections v0.2.4
    Compiling num-format v0.4.4
    Compiling thiserror-impl v2.0.12
-   Compiling derive-syn-parse v0.2.0
    Compiling dyn-clonable-impl v0.9.2
+   Compiling derive-syn-parse v0.2.0
    Compiling object v0.36.7
    Compiling syn v1.0.109
    Compiling dyn-clone v1.0.19
@@ -381,10 +381,10 @@ Cargo build stderr:
    Compiling sp-crypto-hashing v0.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hash256-std-hasher v0.15.2
    Compiling secrecy v0.8.0
-   Compiling array-bytes v6.2.3
    Compiling adler2 v2.0.0
-   Compiling gimli v0.31.1
    Compiling bs58 v0.5.1
+   Compiling gimli v0.31.1
+   Compiling array-bytes v6.2.3
    Compiling miniz_oxide v0.8.5
    Compiling addr2line v0.24.2
    Compiling sp-core v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
@@ -392,28 +392,29 @@ Cargo build stderr:
    Compiling uint v0.10.0
    Compiling impl-serde v0.5.0
    Compiling tokio-macros v2.5.0
-   Compiling signal-hook-registry v1.4.2
    Compiling socket2 v0.5.9
+   Compiling signal-hook-registry v1.4.2
    Compiling mio v1.0.3
    Compiling strsim v0.11.1
    Compiling ident_case v1.0.1
+   Compiling tokio v1.44.1
    Compiling darling_core v0.20.11
    Compiling backtrace v0.3.74
-   Compiling tokio v1.44.1
    Compiling primitive-types v0.13.1
-   Compiling memory-db v0.32.0
-   Compiling trie-root v0.18.0
    Compiling trie-db v0.28.0
+   Compiling trie-root v0.18.0
+   Compiling memory-db v0.32.0
    Compiling schnellru v0.2.4
    Compiling http v1.3.1
    Compiling ring v0.17.14
    Compiling nohash-hasher v0.2.0
-   Compiling darling_macro v0.20.11
    Compiling sp-trie v29.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling darling_macro v0.20.11
    Compiling sp-panic-handler v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-io v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling tiny-keccak v2.0.2
    Compiling same-file v1.0.6
+   Compiling sp-state-machine v0.35.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling walkdir v2.5.0
    Compiling darling v0.20.11
    Compiling sp-keystore v0.34.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
@@ -421,11 +422,10 @@ Cargo build stderr:
    Compiling integer-sqrt v0.1.5
    Compiling toml v0.8.20
    Compiling rustls-pki-types v1.11.0
-   Compiling untrusted v0.9.0
-   Compiling sp-state-machine v0.35.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling common-path v1.0.0
    Compiling httparse v1.10.1
    Compiling termcolor v1.4.1
+   Compiling untrusted v0.9.0
+   Compiling common-path v1.0.0
    Compiling docify_macros v0.2.9
    Compiling sp-arithmetic v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling http-body v1.0.1
@@ -437,15 +437,15 @@ Cargo build stderr:
    Compiling docify v0.2.9
    Compiling rustls-webpki v0.103.1
    Compiling tokio-util v0.7.14
-   Compiling sp-application-crypto v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling scale-type-resolver v0.2.0
    Compiling pin-project-internal v1.1.10
-   Compiling wasm-bindgen-shared v0.2.100
+   Compiling sp-application-crypto v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling simple-mermaid v0.1.0 (https://github.com/kianenigma/simple-mermaid.git?rev=e48b187bcfd5cc75111acd9d241f1bd36604344b#e48b187b)
+   Compiling wasm-bindgen-shared v0.2.100
    Compiling scale-bits v0.7.0
-   Compiling sp-runtime v31.0.1 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling pin-project v1.1.10
    Compiling const-random v0.1.18
+   Compiling sp-runtime v31.0.1 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling der v0.7.9
    Compiling macro_magic_core_macros v0.5.1
    Compiling macro_magic_core v0.5.1
@@ -454,27 +454,27 @@ Cargo build stderr:
    Compiling hmac v0.12.1
    Compiling ff v0.13.1
    Compiling proc-macro-error-attr v1.0.4
-   Compiling rayon-core v1.12.1
-   Compiling base16ct v0.2.0
-   Compiling openssl-probe v0.1.6
-   Compiling atomic-waker v1.1.2
-   Compiling try-lock v0.2.5
    Compiling futures-timer v3.0.3
+   Compiling rayon-core v1.12.1
+   Compiling atomic-waker v1.1.2
+   Compiling openssl-probe v0.1.6
+   Compiling base16ct v0.2.0
    Compiling bumpalo v3.17.0
-   Compiling wasm-bindgen-backend v0.2.100
+   Compiling try-lock v0.2.5
    Compiling want v0.3.1
+   Compiling sec1 v0.7.3
+   Compiling wasm-bindgen-backend v0.2.100
    Compiling rustls-native-certs v0.8.1
    Compiling h2 v0.4.8
-   Compiling sec1 v0.7.3
-   Compiling scale-decode v0.16.0
    Compiling tokio-rustls v0.26.2
+   Compiling scale-decode v0.16.0
    Compiling group v0.13.0
    Compiling crossbeam-deque v0.8.6
    Compiling macro_magic_macros v0.5.1
    Compiling sp-crypto-hashing-proc-macro v0.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling http-body-util v0.1.3
-   Compiling tokio-stream v0.1.17
    Compiling jsonrpsee-types v0.24.9
+   Compiling tokio-stream v0.1.17
    Compiling sp-crypto-hashing v0.1.0
    Compiling sp-version-proc-macro v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling frame-metadata v16.0.0
@@ -485,8 +485,8 @@ Cargo build stderr:
    Compiling tower-service v0.3.3
    Compiling jsonrpsee-core v0.24.9
    Compiling elliptic-curve v0.13.8
-   Compiling sp-metadata-ir v0.6.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-version v29.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling sp-metadata-ir v0.6.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hyper v1.6.0
    Compiling rustls-platform-verifier v0.5.1
    Compiling wasm-bindgen-macro-support v0.2.100
@@ -501,11 +501,11 @@ Cargo build stderr:
    Compiling include_dir_macros v0.7.4
    Compiling wasm-bindgen v0.2.100
    Compiling frame-support-procedural-tools v10.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling frame-decode v0.6.1
    Compiling include_dir v0.7.4
-   Compiling wasm-bindgen-macro v0.2.100
+   Compiling frame-decode v0.6.1
    Compiling soketto v0.8.1
    Compiling dusk-bytes v0.1.7
+   Compiling wasm-bindgen-macro v0.2.100
    Compiling scale-encode v0.10.0
    Compiling ecdsa v0.16.9
    Compiling rayon v1.10.0
@@ -513,17 +513,17 @@ Cargo build stderr:
    Compiling polkadot-sdk v0.7.0
    Compiling macro_magic v0.5.1
    Compiling cfg-expr v0.15.8
-   Compiling sp-api v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling derive-syn-parse v0.1.5
+   Compiling sp-api v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling secp256k1-sys v0.10.1
    Compiling proc-macro-warning v1.84.1
+   Compiling yap v0.12.0
    Compiling tower-layer v0.3.3
    Compiling base58 v0.2.0
-   Compiling yap v0.12.0
-   Compiling frame-support-procedural v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling tower v0.4.13
    Compiling scale-value v0.18.0
    Compiling dusk-bls12_381 v0.11.3
+   Compiling frame-support-procedural v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-genesis-builder v0.7.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hyper-rustls v0.27.5
    Compiling subxt-metadata v0.39.0
@@ -538,34 +538,34 @@ Cargo build stderr:
    Compiling thiserror-impl-no-std v2.0.2
    Compiling derive-where v1.2.7
    Compiling proc-macro-error-attr2 v2.0.0
-   Compiling ahash v0.4.8
-   Compiling heck v0.5.0
    Compiling utf8parse v0.2.2
-   Compiling tt-call v1.0.9
+   Compiling heck v0.5.0
    Compiling base64ct v1.7.3
-   Compiling subxt-utils-fetchmetadata v0.39.0
+   Compiling tt-call v1.0.9
+   Compiling ahash v0.4.8
    Compiling password-hash v0.5.0
-   Compiling proc-macro-error2 v2.0.1
-   Compiling subxt-core v0.39.0
-   Compiling anstyle-parse v0.2.6
-   Compiling subxt-codegen v0.39.0
    Compiling hashbrown v0.9.1
+   Compiling subxt-utils-fetchmetadata v0.39.0
+   Compiling subxt-codegen v0.39.0
+   Compiling proc-macro-error2 v2.0.1
+   Compiling anstyle-parse v0.2.6
+   Compiling subxt-core v0.39.0
    Compiling thiserror-no-std v2.0.2
    Compiling ethabi-decode v2.0.0 (https://github.com/Snowfork/ethabi-decode.git?branch=master#d39408b5)
-   Compiling jsonrpsee-ws-client v0.24.9
    Compiling js-sys v0.3.77
+   Compiling jsonrpsee-ws-client v0.24.9
    Compiling jsonrpsee-http-client v0.24.9
    Compiling dusk-jubjub v0.12.1
    Compiling binary-merkle-tree v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling itertools v0.9.0
    Compiling frame-support v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling derive_more v0.99.19
-   Compiling colorchoice v1.0.3
-   Compiling anstyle-query v1.1.2
-   Compiling anstyle v1.0.10
    Compiling is_terminal_polyfill v1.70.1
-   Compiling anstream v0.6.18
+   Compiling colorchoice v1.0.3
+   Compiling anstyle v1.0.10
+   Compiling anstyle-query v1.1.2
    Compiling wasm-bindgen-futures v0.4.50
+   Compiling anstream v0.6.18
    Compiling dusk-plonk v0.12.0 (https://github.com/availproject/plonk.git?tag=v0.12.0-polygon-2#6ada57a8)
    Compiling jsonrpsee v0.24.9
    Compiling secp256k1 v0.30.0
@@ -574,8 +574,8 @@ Cargo build stderr:
    Compiling finito v0.1.0
    Compiling env_filter v0.1.3
    Compiling secrecy v0.10.3
-   Compiling web-time v1.1.0
    Compiling jiff v0.2.5
+   Compiling web-time v1.1.0
    Compiling subxt v0.39.0
    Compiling subxt-signer v0.39.0
    Compiling dotenvy v0.15.7
@@ -584,7 +584,7 @@ Cargo build stderr:
    Compiling kate-recovery v0.10.0 (https://github.com/availproject/avail-core?tag=core-node-7#70458d54)
    Compiling avail-rust v0.1.5 (https://github.com/availproject/avail-rust?tag=v0.1.5#4878b659)
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 15s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 38s
 
 Cargo build completed successfully
 Rust development environment setup completed successfully!
@@ -646,6 +646,80 @@ Avail-go environment setup completed successfully
 
 ================================================
 
+=== Running Data Submission script ===
+Script path: /root/desktop/scripts/snippets/da_submit_data.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA Submit Data Test for All SDKs ===
+
+===== Processing JavaScript SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-submit-data/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Submitting data to App Id: 89
+Submitting transaction with data...
+Block Hash: 0x0835e53d9b7e82c13a070b4066842e272fd8230b31c86b26d1b233aeb227d511, Block Number: 1582647, Tx Hash: 0xcfd8fd78a87aa436ae8e5b1a9271e8e328a621070a85547cb3d8c7c7d81d2515, Tx Index: 1
+Data submitted successfully:
+Who: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+DataHash: 0xd92871f83b488631e262173785fc43a9818951188baa933653739bcc33fe8931
+Data submission completed successfully
+
+Error output:
+2025-03-30 17:56:51 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JavaScript data submission was successful!
+Updated avail_js_da_submit_data result to True
+
+===== Processing Rust SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-submit-data/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Block Hash: 0x6499cdea73a2e7519fd25afb517c27625b9578eedc459d8a202dd1b477a91751, Block Number: 1582648, Tx Hash: 0x0233b560641c273de591b55c76c5198a8910c25ac55fbb52dcc976d99fb6f5f3, Tx Index: 1
+Call data: "My Data"
+Data Submission finished correctly
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 15.15s
+     Running `target/debug/avail-rust`
+
+Rust data submission was successful!
+Updated avail_rust_da_submit_data result to True
+
+===== Processing Go SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-submit-data/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote Go code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Block Hash: 0x3bb0db43dc666bd733c079bdd81d5d87e380142e7b417d0514fa4b7ab388d3cb, Block Index: 1582649, Tx Hash: 0xc2db4c936fb0b31c487308d1eb8fdcedd204c1c44e72abe5f8c1839481091313, Tx Index: 1
+Data submission completed successfully
+
+Go data submission was successful!
+Updated avail_go_da_submit_data result to True
+
+=== Test Results Summary ===
+JavaScript DA Submit Data: ✅ Success
+Rust DA Submit Data: ✅ Success
+Go DA Submit Data: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+Data Submission script completed with return code: 0
+
+================================================
+
 === Running Data Submission from Docs Section script ===
 Script path: /root/desktop/scripts/snippets/da_submit_data_from_docs_section.py
 Script directory: /root/desktop/scripts/snippets
@@ -660,14 +734,14 @@ Command output:
 Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Submitting data to App Id: 89
 Submitting transaction with data...
-Block Hash: 0xe2e265d94f44b3317507469ed11333e04d62e794448fd895fda2d4c2bfc3dab3, Block Number: 1582519, Tx Hash: 0xf30683c58688f28d1b4e2d07f4e7c5d055d6dba73ecc1188f8dd70266e36f056, Tx Index: 1
+Block Hash: 0x8c18798e88eac385fb55ac84dbfed3bf94e60e70a0dfb22c9e30235f180d6959, Block Number: 1582650, Tx Hash: 0x7b2ff843c5763764ad54d2b92661ce9998de282a51bb84f6d7e03a28114fff76, Tx Index: 1
 Data submitted successfully:
 Who: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 DataHash: 0xd92871f83b488631e262173785fc43a9818951188baa933653739bcc33fe8931
 Data submission completed successfully
 
 Error output:
-2025-03-30 17:14:16 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 17:57:54 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS Data Submission from Docs Section was successful!
 Updated avail_js_da_submit_data_from_docs_section result to True
@@ -679,13 +753,13 @@ Successfully wrote code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0xabcc76c45aa303c1930c6ab3ee07e47f98227cc6ecf06ac1b828aff3a78c3316, Block Number: 1582521, Tx Hash: 0x78c77df4b17193692285f8da44502174e8b9491c9bdd2975f1b958e0e02f59d1, Tx Index: 1
+Block Hash: 0x4b99d313e7694b3b3529f6e37ba538749ec3a403148333e574fb13260b253782, Block Number: 1582651, Tx Hash: 0x25b16ab81e9e7f5afb896f129fdc1dcf857fd383ca96cb30f63df04004e1d33f, Tx Index: 1
 Call data: "My Data"
 Data Submission finished correctly
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 14.49s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.31s
      Running `target/debug/avail-rust`
 
 RUST Data Submission from Docs Section was successful!
@@ -698,7 +772,7 @@ Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0xec1760d2ab42c5061b33a68664912b8e1c1c233d11989ba1190376ad76aa582b, Block Index: 1582522, Tx Hash: 0x633f4f7c7457a03a1f006f3547642f82ea50e665e44ed3fab1e763e6e55a64e5, Tx Index: 1
+Block Hash: 0x0acdecc28afa894a0980754b590de1f4b025b49416ff3bfba939e8adf2a8b386, Block Index: 1582652, Tx Hash: 0x336344dd5f1589e3d8f267bf02909c3d7468478be0812a4f08d390c117736f6e, Tx Index: 1
 Data submission completed successfully
 
 GO Data Submission from Docs Section was successful!
@@ -720,10 +794,392 @@ Data Submission from Docs Section script completed with return code: 0
 
 ================================================
 
+=== Running Create Application Key script ===
+Script path: /root/desktop/scripts/snippets/da_create_application_key.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA Create Application Key Test for All SDKs ===
+
+===== Processing JavaScript SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Set unique application key: avail-js-automated-run-check-30-03-2025-20250330_175843
+Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Submitting transaction to create application key...
+Application created successfully:
+Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Key: avail-js-automated-run-check-30-03-2025-20250330_175843
+App Id: 389
+Transaction Hash: 0xa7ad96663620bc208eba9e93b126ffa469f1fb672223d160dce3f6fb9769520a
+
+Error output:
+2025-03-30 17:58:55 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+Third line of output: Application created successfully:
+JavaScript application key creation was successful!
+Updated avail_js_da_create_application_key result to True
+
+===== Processing Rust SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Set unique application key: avail-rust-automated-run-check-30-03-2025-20250330_175843
+Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Application Key Created
+390
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.31s
+     Running `target/debug/avail-rust`
+
+Second last line of output: Application Key Created
+Rust application key creation was successful!
+Updated avail_rust_da_create_application_key result to True
+
+===== Processing Go SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Set unique application key: avail-go-automated-run-check-30-03-2025-20250330_175843
+Successfully wrote Go code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Application Key Created Successfully
+Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3, Key: avail-go-automated-run-check-30-03-2025-20250330_175843, AppId: 391
+Block Hash: 0x8543f7b2c41073f8f30a0987bf9f3f2ff7c4a4c298f72994d0a110459424acbb, Block Index: 1582655, Tx Hash: 0xd5f7b0646a72f7976ec723e940901e6261047574bf97a68085c71b6e9bb0c9ee, Tx Index: 1
+Application Key Created
+
+Last line of output: Application Key Created
+Go application key creation was successful!
+Updated avail_go_da_create_application_key result to True
+
+=== Test Results Summary ===
+JavaScript DA Create Application Key: ✅ Success
+Rust DA Create Application Key: ✅ Success
+Go DA Create Application Key: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+Create Application Key script completed with return code: 0
+
+================================================
+
+=== Running Balances Transfer Keep Alive script ===
+Script path: /root/desktop/scripts/snippets/balances_transfer_keep_alive.py
+Script directory: /root/desktop/scripts/snippets
+=== Running Balances Transfer Keep Alive Test for All SDKs ===
+
+===== Processing JavaScript SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-keep-alive/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
+Transfer Amount: 12 AVAIL
+Submitting transfer transaction...
+Transaction Hash: 0x696c56b7460d159b797a0f412254154366071d7b871955e043b5295510292f0b
+Block Hash: 0x42a50deac8865281da81113babf60c985cfe22bc84fcdb28bde2812609f8ffb5
+Block Number: 1582656
+Transfer completed successfully
+
+Error output:
+2025-03-30 17:59:53 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JavaScript transfer keep alive was successful!
+Updated avail_js_balances_transfer_keep_alive result to True
+
+===== Processing Rust SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-keep-alive/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Block Hash: 0xa5086b92addf3f1677b3f3be37c66d9333b9cd19029874e9b061b5171a7bb998, Block Number: 1582658, Tx Hash: 0x0ad32668cc7e44da07dbbef20a0dfffb8321d4670ad19977c3bddd960ce89b74, Tx Index: 1
+transfer completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 14.08s
+     Running `target/debug/avail-rust`
+
+Rust transfer keep alive was successful!
+Updated avail_rust_balances_transfer_keep_alive result to True
+
+===== Processing Go SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-keep-alive/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote Go code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Transaction successful
+Block Hash: 0x9fb6bbfa4cbbc74f8df669b175457be0d5cfd7f5d67738d69f15c4c0c8ddb766, Block Index: 1582659, Tx Hash: 0x0c0f1727005599c913737dc2e4641a573acfd851317c78df4f8a5ebfbf2ee915, Tx Index: 1
+Transfer completed successfully
+
+Go transfer keep alive was successful!
+Updated avail_go_balances_transfer_keep_alive result to True
+
+=== Test Results Summary ===
+JavaScript Balances Transfer Keep Alive: ✅ Success
+Rust Balances Transfer Keep Alive: ✅ Success
+Go Balances Transfer Keep Alive: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+Balances Transfer Keep Alive script completed with return code: 0
+
+================================================
+
+=== Running Balances Transfer Keep Alive from Docs Section script ===
+Script path: /root/desktop/scripts/snippets/balances_transfer_keep_alive_from_docs_section.py
+Script directory: /root/desktop/scripts/snippets
+=== Running Balances Transfer Keep Alive from Docs Section Test for All SDKs ===
+
+===== Processing JS SDK Balances Transfer Keep Alive from Docs Section =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/transfer-balances/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
+Transfer Amount: 12 AVAIL
+Submitting transfer transaction...
+Transaction Hash: 0xb9e57caab8a43e14da4feb10ace38d8db7ef94161f762e4414ad95a2dd64cafa
+Block Hash: 0xebb5933e0ace7e68f2a73c4bf1e7a9054014b88c11b339c3e61073fd91887b27
+Block Number: 1582660
+Transfer completed successfully
+
+Error output:
+2025-03-30 18:01:13 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS Balances Transfer Keep Alive from Docs Section was successful!
+Adding missing key: avail_js_balances_transfer_keep_alive_from_docs_section
+Updated avail_js_balances_transfer_keep_alive_from_docs_section result to True
+
+===== Processing RUST SDK Balances Transfer Keep Alive from Docs Section =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/transfer-balances/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Block Hash: 0x315d0534e0402f0811c71870f6e369f5363b8cc94ca5635b5c73b77d05116794, Block Number: 1582661, Tx Hash: 0x3b10ce93c4aa4b6e629fc444e7161c17026ac95b291eda2405c82d8145bbc9b5, Tx Index: 1
+transfer completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.40s
+     Running `target/debug/avail-rust`
+
+RUST Balances Transfer Keep Alive from Docs Section failed or didn't complete successfully
+Adding missing key: avail_rust_balances_transfer_keep_alive_from_docs_section
+Updated avail_rust_balances_transfer_keep_alive_from_docs_section result to False
+
+===== Processing GO SDK Balances Transfer Keep Alive from Docs Section =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/transfer-balances/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go --config config.json
+Command output:
+Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Transaction successful
+Block Hash: 0xa7c680fc041b30308b9486f29a775c157de6fbd2b28afef4c06126ccac674ab5, Block Index: 1582662, Tx Hash: 0x49693caa6cd3d8a9d93835b7cb1fd82b67548be36dee29a93c9478f5975b5619, Tx Index: 1
+Transfer completed successfully
+
+GO Balances Transfer Keep Alive from Docs Section was successful!
+Adding missing key: avail_go_balances_transfer_keep_alive_from_docs_section
+Updated avail_go_balances_transfer_keep_alive_from_docs_section result to True
+
+=== Test Results Summary ===
+JavaScript Balances Transfer Keep Alive from Docs Section: ✅ Success
+Rust Balances Transfer Keep Alive from Docs Section: ❌ Failed
+Go Balances Transfer Keep Alive from Docs Section: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = False
+go_snippetrunresult = True
+
+Overall test result: ❌ Failed
+
+Balances Transfer Keep Alive from Docs Section script completed with return code: 1
+WARNING: Balances Transfer Keep Alive from Docs Section script returned non-zero exit code: 1
+
+================================================
+
+=== Running Balances Transfer Allow Death script ===
+Script path: /root/desktop/scripts/snippets/balances_transfer_allow_death.py
+Script directory: /root/desktop/scripts/snippets
+=== Running Balances Transfer Allow Death Test for All SDKs ===
+
+===== Processing JavaScript SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-allow-death/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
+Submitting transfer transaction...
+Transaction Hash: 0xe05125f49a2b2b76a887cabe713cfc793cf1ad3b0ecd29922068362db3cae3c0
+Block Hash: 0xd23df2a8118a9be014dcc860cca3c50978dc55e31f23acdef52f89fdd747be31
+Block Number: 1582663
+Transfer completed successfully
+
+Error output:
+2025-03-30 18:02:12 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JavaScript transfer allow death was successful!
+Updated avail_js_balances_transfer_allow_death result to True
+
+===== Processing Rust SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-allow-death/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Block Hash: 0x40d6f02adf7d9438b901d63f06d50bdb368b9a796014b9c260b2c3d548d61c80, Block Number: 1582664, Tx Hash: 0x1e253560df5338bd8518c39ef16b2dc45e55baf75b5c474c10add23cf1debb5e, Tx Index: 1
+transfer completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.15s
+     Running `target/debug/avail-rust`
+
+Rust transfer allow death was successful!
+Updated avail_rust_balances_transfer_allow_death result to True
+
+===== Processing Go SDK =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/balances-transfer-allow-death/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote Go code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Transaction successful
+Block Hash: 0xb96826690a9d0f935aa364d480a2e8081106210b50ee3928b74ab6e6f5a478ba, Block Index: 1582665, Tx Hash: 0x36b243d6f6ff000c56c696627e4813bbf1da53f1608fbff4f77b3831550dab92, Tx Index: 1
+Transfer completed successfully
+
+Go transfer allow death was successful!
+Updated avail_go_balances_transfer_allow_death result to True
+
+=== Test Results Summary ===
+JavaScript Balances Transfer Allow Death: ✅ Success
+Rust Balances Transfer Allow Death: ✅ Success
+Go Balances Transfer Allow Death: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+Balances Transfer Allow Death script completed with return code: 0
+
+================================================
+
+=== Running Balances Transfer Allow Death from Docs Section script ===
+Script path: /root/desktop/scripts/snippets/balances_transfer_allow_death_from_docs_section.py
+Script directory: /root/desktop/scripts/snippets
+=== Running Balances Transfer Allow Death from Docs Section Test for All SDKs ===
+
+===== Processing JS SDK Balances Transfer Allow Death from Docs Section =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/transfer-balances/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
+Submitting transfer transaction...
+Transaction Hash: 0x830492d472c31b957fc4a981f24ca7b69878eaf19f58ddb4660ad07083c777f8
+Block Hash: 0xd3baac163b669e9dabac06cb7a28aa092d66ac8280fa976d81bfac07fd2f1b53
+Block Number: 1582666
+Transfer completed successfully
+
+Error output:
+2025-03-30 18:03:10 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS Balances Transfer Allow Death from Docs Section was successful!
+Adding missing key: avail_js_balances_transfer_allow_death_from_docs_section
+Updated avail_js_balances_transfer_allow_death_from_docs_section result to True
+
+===== Processing RUST SDK Balances Transfer Allow Death from Docs Section =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/transfer-balances/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Block Hash: 0x3670c3912177fed8b865200462a5b09843afaa65be07065e9e70c1a4634ee72a, Block Number: 1582667, Tx Hash: 0xc35fce56e1d1b48c3f2e0a7a1c05f7f1bc42015ebc58cc4e3657746fb36c87b1, Tx Index: 1
+transfer completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.10s
+     Running `target/debug/avail-rust`
+
+RUST Balances Transfer Allow Death from Docs Section failed or didn't complete successfully
+Adding missing key: avail_rust_balances_transfer_allow_death_from_docs_section
+Updated avail_rust_balances_transfer_allow_death_from_docs_section result to False
+
+===== Processing GO SDK Balances Transfer Allow Death from Docs Section =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/transfer-balances/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
+Transaction successful
+Block Hash: 0xadb75f57c6eebcd38c705926eeb0ffb50f4ccba0ce81225dad104326ef9cb7a5, Block Index: 1582668, Tx Hash: 0x7b0c95af2b9660e4ce350356a5ccdbe1da4b75691a61aef4f6b7cbe47afe5dc6, Tx Index: 1
+Transfer completed successfully
+
+GO Balances Transfer Allow Death from Docs Section was successful!
+Adding missing key: avail_go_balances_transfer_allow_death_from_docs_section
+Updated avail_go_balances_transfer_allow_death_from_docs_section result to True
+
+=== Test Results Summary ===
+JavaScript Balances Transfer Allow Death from Docs Section: ✅ Success
+Rust Balances Transfer Allow Death from Docs Section: ❌ Failed
+Go Balances Transfer Allow Death from Docs Section: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = False
+go_snippetrunresult = True
+
+Overall test result: ❌ Failed
+
+Balances Transfer Allow Death from Docs Section script completed with return code: 1
+WARNING: Balances Transfer Allow Death from Docs Section script returned non-zero exit code: 1
+
+================================================
+
 === Running System Account Fetch script ===
 Script path: /root/desktop/scripts/snippets/system_account.py
 Script directory: /root/desktop/scripts/snippets
-=== Running System Account Fetch Test for All SDKs ===
+=== Running System Account Test for All SDKs ===
 
 ===== Processing JS SDK System Account =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/system-account/page.mdx
@@ -733,13 +1189,13 @@ Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
 Checking balance for address: 5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 The following balances are in the smallest units, divide by 10^18 to get the balance in AVAIL
-Free Balance: 14076943428992781091654
+Free Balance: 14165633428992781091654
 Reserved Balance: 15100000000000000000
 Frozen Balance: 1131938738398108251550
 Account information fetched successfully
 
 Error output:
-2025-03-30 17:15:34 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 18:04:12 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS System Account was successful!
 Updated avail_js_system_account result to True
@@ -759,7 +1215,7 @@ Account information fetched successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 13.26s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.20s
      Running `target/debug/avail-rust`
 
 RUST System Account was successful!
@@ -771,7 +1227,7 @@ Successfully wiped contents of /root/desktop/avail-go/main.go
 Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
-Free Balance:  14076.943428992781091654 Avail
+Free Balance:  14165.633428992781091654 Avail
 Reserved Balance:  15.1 Avail
 Frozen Balance:  1131.93873839810825155 Avail
 Account information fetched successfully
@@ -780,9 +1236,9 @@ GO System Account was successful!
 Updated avail_go_system_account result to True
 
 === Test Results Summary ===
-JavaScript System Account Fetch: ✅ Success
-Rust System Account Fetch: ✅ Success
-Go System Account Fetch: ✅ Success
+JavaScript System Account: ✅ Success
+Rust System Account: ✅ Success
+Go System Account: ✅ Success
 
 Machine-readable results:
 js_snippetrunresult = True
@@ -798,7 +1254,7 @@ System Account Fetch script completed with return code: 0
 === Running System Account Fetch from Docs Section script ===
 Script path: /root/desktop/scripts/snippets/system_account_from_docs_section.py
 Script directory: /root/desktop/scripts/snippets
-=== Running System Account Fetch Test for All SDKs ===
+=== Running System Account Fetch from Docs Section Test for All SDKs ===
 
 ===== Processing JS SDK System Account =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/query-balances/page.mdx
@@ -808,13 +1264,13 @@ Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
 Checking balance for address: 5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 The following balances are in the smallest units, divide by 10^18 to get the balance in AVAIL
-Free Balance: 14076943428992781091654
+Free Balance: 14165633428992781091654
 Reserved Balance: 15100000000000000000
 Frozen Balance: 1131938738398108251550
 Account information fetched successfully
 
 Error output:
-2025-03-30 17:16:06 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 18:04:41 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS System Account was successful!
 Updated avail_js_system_account_from_docs_section result to True
@@ -834,7 +1290,7 @@ Account information fetched successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.54s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.17s
      Running `target/debug/avail-rust`
 
 RUST System Account was successful!
@@ -846,7 +1302,7 @@ Successfully wiped contents of /root/desktop/avail-go/main.go
 Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
-Free Balance:  14076.943428992781091654 Avail
+Free Balance:  14165.633428992781091654 Avail
 Reserved Balance:  15.1 Avail
 Frozen Balance:  1131.93873839810825155 Avail
 Account information fetched successfully
@@ -855,9 +1311,9 @@ GO System Account was successful!
 Updated avail_go_system_account_from_docs_section result to True
 
 === Test Results Summary ===
-JavaScript System Account Fetch: ✅ Success
-Rust System Account Fetch: ✅ Success
-Go System Account Fetch: ✅ Success
+JavaScript System Account: ✅ Success
+Rust System Account: ✅ Success
+Go System Account: ✅ Success
 
 Machine-readable results:
 js_snippetrunresult = True
@@ -867,6 +1323,674 @@ go_snippetrunresult = True
 Overall test result: ✅ Success
 
 System Account Fetch from Docs Section script completed with return code: 0
+
+================================================
+
+=== Running DA Next App ID script ===
+Script path: /root/desktop/scripts/snippets/da_next_app_id.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA Next App ID Test for All SDKs ===
+
+===== Processing JS SDK DA Next App ID =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-next-app-id/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Current block hash: 0x1b3d917a8982b0b0c8e9b9700d41a86101fa07316d2ba2944c5e08bf0606576f
+Next available App ID is: 392
+App ID fetched successfully
+
+Error output:
+2025-03-30 18:05:08 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS DA Next App ID was successful!
+Adding missing key: avail_js_da_next_app_id
+Updated avail_js_da_next_app_id result to True
+
+===== Processing RUST SDK DA Next App ID =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-next-app-id/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Next available App ID is: AppId(392)
+App ID fetched successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.22s
+     Running `target/debug/avail-rust`
+
+RUST DA Next App ID was successful!
+Adding missing key: avail_rust_da_next_app_id
+Updated avail_rust_da_next_app_id result to True
+
+===== Processing GO SDK DA Next App ID =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-next-app-id/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Next available App ID is: 392
+App ID fetched successfully
+
+GO DA Next App ID was successful!
+Adding missing key: avail_go_da_next_app_id
+Updated avail_go_da_next_app_id result to True
+
+=== Test Results Summary ===
+JavaScript DA Next App ID: ✅ Success
+Rust DA Next App ID: ✅ Success
+Go DA Next App ID: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+DA Next App ID script completed with return code: 0
+
+================================================
+
+=== Running DA App Keys script ===
+Script path: /root/desktop/scripts/snippets/da_app_keys.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA App Keys Test for All SDKs ===
+
+===== Processing JS SDK DA App Keys =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-app-keys/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Current block hash: 0x9c478c6edc1be2175d6f0304566e76547baf748de985a5eb77c63b0f1a74facd
+App ID: 291
+Owner: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
+Key: my Application Key Name!!!
+App Key fetched successfully
+
+Error output:
+2025-03-30 18:05:36 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS DA App Keys was successful!
+Adding missing key: avail_js_da_app_keys
+Updated avail_js_da_app_keys result to True
+
+===== Processing RUST SDK DA App Keys =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-app-keys/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+App Key fetched successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.05s
+     Running `target/debug/avail-rust`
+[src/main.rs:17:5] result = Some(
+    AppKeyInfo {
+        owner: AccountId32(
+            [
+                34,
+                77,
+                44,
+                72,
+                56,
+                3,
+                209,
+                92,
+                91,
+                172,
+                228,
+                249,
+                69,
+                111,
+                118,
+                224,
+                190,
+                112,
+                190,
+                195,
+                57,
+                38,
+                17,
+                193,
+                161,
+                35,
+                76,
+                210,
+                233,
+                169,
+                45,
+                13,
+            ],
+        ),
+        id: AppId(
+            255,
+        ),
+    },
+)
+
+RUST DA App Keys was successful!
+Adding missing key: avail_rust_da_app_keys
+Updated avail_rust_da_app_keys result to True
+
+===== Processing GO SDK DA App Keys =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-app-keys/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+App Key Owner:  5GWeSP477RC8CFyTQJDiBmkTuGu8UDroSDPbVimSqiPThrPu
+App Key AppId:  201
+App Key fetched successfully
+
+GO DA App Keys was successful!
+Adding missing key: avail_go_da_app_keys
+Updated avail_go_da_app_keys result to True
+
+=== Test Results Summary ===
+JavaScript DA App Keys: ✅ Success
+Rust DA App Keys: ✅ Success
+Go DA App Keys: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+DA App Keys script completed with return code: 0
+
+================================================
+
+=== Running DA Submission using txHash and blockHash script ===
+Script path: /root/desktop/scripts/snippets/da_submission_using_txHash_blockHash.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA Submission using txHash and blockHash Test for All SDKs ===
+
+===== Processing JS SDK DA Submission using txHash and blockHash =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+
+Error output:
+/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:859
+    return new TSError(diagnosticText, diagnosticCodes, diagnostics);
+           ^
+TSError: ⨯ Unable to compile TypeScript:
+your-file-name.ts(6,23): error TS2552: Cannot find name 'SDK'. Did you mean 'sdk'?
+your-file-name.ts(16,25): error TS2552: Cannot find name 'Block'. Did you mean 'block'?
+
+    at createTSError (/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:859:12)
+    at reportTSError (/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:863:19)
+    at getOutput (/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:1077:36)
+    at Object.compile (/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:1433:41)
+    at Module.m._compile (/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:1617:30)
+    at node:internal/modules/cjs/loader:1706:10
+    at Object.require.extensions.<computed> [as .ts] (/root/.local/share/pnpm/global/5/.pnpm/ts-node@10.9.2_@types+node@22.13.10_typescript@5.8.2/node_modules/ts-node/src/index.ts:1621:12)
+    at Module.load (node:internal/modules/cjs/loader:1289:32)
+    at Function._load (node:internal/modules/cjs/loader:1108:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14) {
+  diagnosticCodes: [ 2552, 2552 ]
+}
+
+JS DA Submission using txHash and blockHash failed or didn't complete successfully
+Adding missing key: avail_js_da_submission_using_txHash_blockHash
+Updated avail_js_da_submission_using_txHash_blockHash result to False
+
+===== Processing RUST SDK DA Submission using txHash and blockHash =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Tx Hash: 0x70d8cc521c341d717f5b11d1898fc7a21f9d894c3617929aaabaea71c4814911, Tx Index: 1, Data: "My Data Submission", App Id: 89, Tx Singer: Some("5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg")
+Data retrieval completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.36s
+     Running `target/debug/avail-rust`
+
+RUST DA Submission using txHash and blockHash was successful!
+Adding missing key: avail_rust_da_submission_using_txHash_blockHash
+Updated avail_rust_da_submission_using_txHash_blockHash result to True
+
+===== Processing GO SDK DA Submission using txHash and blockHash =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Tx Hash: 0x70d8cc521c341d717f5b11d1898fc7a21f9d894c3617929aaabaea71c4814911, Tx Index: 1, Data: My Data Submission, App Id: 89, Signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg,
+Data retrieval completed successfully
+
+GO DA Submission using txHash and blockHash was successful!
+Adding missing key: avail_go_da_submission_using_txHash_blockHash
+Updated avail_go_da_submission_using_txHash_blockHash result to True
+
+=== Test Results Summary ===
+JavaScript DA Submission using txHash and blockHash: ❌ Failed
+Rust DA Submission using txHash and blockHash: ✅ Success
+Go DA Submission using txHash and blockHash: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = False
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ❌ Failed
+
+DA Submission using txHash and blockHash script completed with return code: 1
+WARNING: DA Submission using txHash and blockHash script returned non-zero exit code: 1
+
+================================================
+
+=== Running DA Submission using App ID script ===
+Script path: /root/desktop/scripts/snippets/da_submission_using_appID.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA Submission using App ID Test for All SDKs ===
+
+===== Processing JS SDK DA Submission using App ID =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Looking up data for App ID: 89
+In block: 0xd5f95593d91a581d7ce7b8717789298345be4be47e75ba93e7159cfe23083a7b
+Found 1 data submission(s)
+
+Data Submission Details:
+Tx Hash: 0x70d8cc521c341d717f5b11d1898fc7a21f9d894c3617929aaabaea71c4814911
+Tx Index: 1
+Data (ASCII): My Data Submission
+App Id: 89
+Signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
+---
+Data retrieval completed successfully
+
+Error output:
+2025-03-30 18:06:32 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 18:06:37 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS DA Submission using App ID was successful!
+Adding missing key: avail_js_da_submission_using_appID
+Updated avail_js_da_submission_using_appID result to True
+
+===== Processing RUST SDK DA Submission using App ID =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Tx Hash: 0x70d8cc521c341d717f5b11d1898fc7a21f9d894c3617929aaabaea71c4814911, Tx Index: 1, Data: "My Data Submission", App Id: 89, Tx Singer: Some("5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg")
+Data retrieval completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.96s
+     Running `target/debug/avail-rust`
+
+RUST DA Submission using App ID was successful!
+Adding missing key: avail_rust_da_submission_using_appID
+Updated avail_rust_da_submission_using_appID result to True
+
+===== Processing GO SDK DA Submission using App ID =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Tx Hash: 0x8654df7b59451e2feab9cd35132948d018a412c8d7a351295f21e7b292d7e106, Tx Index: 2, Data: Fourth Data Transaction, App Id: 2, Signer: 5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty,
+Tx Hash: 0xa1228110fdf20f08797263148e4da9e1666e207bf50366116dd6090cb12fb30e, Tx Index: 6, Data: Second Data Transaction, App Id: 2, Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY,
+Data retrieval completed successfully
+
+GO DA Submission using App ID was successful!
+Adding missing key: avail_go_da_submission_using_appID
+Updated avail_go_da_submission_using_appID result to True
+
+=== Test Results Summary ===
+JavaScript DA Submission using App ID: ✅ Success
+Rust DA Submission using App ID: ✅ Success
+Go DA Submission using App ID: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+DA Submission using App ID script completed with return code: 0
+
+================================================
+
+=== Running All DA Submissions for a given block script ===
+Script path: /root/desktop/scripts/snippets/da_all_da_submissions.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA All DA Submissions Test for All SDKs ===
+
+===== Processing JS SDK DA All DA Submissions =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Looking up all data submissions in block: 0x94746ba186876d7407ee618d10cb6619befc59eeb173cacb00c14d1ff492fc58
+Found 4 data submission(s)
+
+Data Submission Details:
+Tx Hash: 0x8654df7b59451e2feab9cd35132948d018a412c8d7a351295f21e7b292d7e106
+Tx Index: 2
+Data (ASCII): Fourth Data Transaction
+App Id: 2
+Signer: 5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty
+---
+Tx Hash: 0x874ed4a60e5dcc6dafdfc0013dd86966eda3f27d911126ec37b02b3b1986e0be
+Tx Index: 5
+Data (ASCII): First Data Transaction
+App Id: 1
+Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+---
+Tx Hash: 0xa1228110fdf20f08797263148e4da9e1666e207bf50366116dd6090cb12fb30e
+Tx Index: 6
+Data (ASCII): Second Data Transaction
+App Id: 2
+Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+---
+Tx Hash: 0xe7efa71363d11bce370fe71a33e5ff296775f37507075c49316132131420f793
+Tx Index: 7
+Data (ASCII): Third Data Transaction
+App Id: 3
+Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
+---
+Data retrieval completed successfully
+
+Error output:
+2025-03-30 18:07:05 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 18:07:07 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS DA All DA Submissions was successful!
+Adding missing key: avail_js_da_all_da_submissions
+Updated avail_js_da_all_da_submissions result to True
+
+===== Processing RUST SDK DA All DA Submissions =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Tx Hash: 0x8654df7b59451e2feab9cd35132948d018a412c8d7a351295f21e7b292d7e106, Tx Index: 2, Data: "Fourth Data Transaction", App Id: 2, Tx Singer: Some("5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty")
+Tx Hash: 0x874ed4a60e5dcc6dafdfc0013dd86966eda3f27d911126ec37b02b3b1986e0be, Tx Index: 5, Data: "First Data Transaction", App Id: 1, Tx Singer: Some("5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY")
+Tx Hash: 0xa1228110fdf20f08797263148e4da9e1666e207bf50366116dd6090cb12fb30e, Tx Index: 6, Data: "Second Data Transaction", App Id: 2, Tx Singer: Some("5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY")
+Tx Hash: 0xe7efa71363d11bce370fe71a33e5ff296775f37507075c49316132131420f793, Tx Index: 7, Data: "Third Data Transaction", App Id: 3, Tx Singer: Some("5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY")
+Data retrieval completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.73s
+     Running `target/debug/avail-rust`
+
+RUST DA All DA Submissions was successful!
+Adding missing key: avail_rust_da_all_da_submissions
+Updated avail_rust_da_all_da_submissions result to True
+
+===== Processing GO SDK DA All DA Submissions =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+4
+Tx Hash: 0x8654df7b59451e2feab9cd35132948d018a412c8d7a351295f21e7b292d7e106, Tx Index: 2, Data: Fourth Data Transaction, App Id: 2, Signer: 5FHneW46xGXgs5mUiveU4sbTyGBzmstUspZC92UhjJM694ty,
+Tx Hash: 0x874ed4a60e5dcc6dafdfc0013dd86966eda3f27d911126ec37b02b3b1986e0be, Tx Index: 5, Data: First Data Transaction, App Id: 1, Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY,
+Tx Hash: 0xa1228110fdf20f08797263148e4da9e1666e207bf50366116dd6090cb12fb30e, Tx Index: 6, Data: Second Data Transaction, App Id: 2, Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY,
+Tx Hash: 0xe7efa71363d11bce370fe71a33e5ff296775f37507075c49316132131420f793, Tx Index: 7, Data: Third Data Transaction, App Id: 3, Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY,
+Data retrieval completed successfully
+
+GO DA All DA Submissions was successful!
+Adding missing key: avail_go_da_all_da_submissions
+Updated avail_go_da_all_da_submissions result to True
+
+=== Test Results Summary ===
+JavaScript DA All DA Submissions: ✅ Success
+Rust DA All DA Submissions: ✅ Success
+Go DA All DA Submissions: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+All DA Submissions for a given block script completed with return code: 0
+
+================================================
+
+=== Running All Transactions by Signer script ===
+Script path: /root/desktop/scripts/snippets/da_all_transactions_by_signer.py
+Script directory: /root/desktop/scripts/snippets
+=== Running DA All Transactions by Signer Test for All SDKs ===
+
+===== Processing JS SDK DA All Transactions by Signer =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Looking up transactions by signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
+In block: 0x75a6c54bb5ea904e47fa151956992d7cf543bc7c936d78488e311db8e10397c1
+Found 1 transaction(s)
+
+Transaction Details:
+Pallet Name: balances
+Pallet Index: 6
+Call Name: transferKeepAlive
+Call Index: 3
+Tx Hash: 0xe230cc1e9af8d2792a59e79d266159184499bc98abfabfbae7f2c9d80002ec30
+Tx Index: 1
+Signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
+---
+Transaction retrieval completed successfully
+
+Error output:
+2025-03-30 18:07:33 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 18:07:34 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS DA All Transactions by Signer was successful!
+Adding missing key: avail_js_da_all_transactions_by_signer
+Updated avail_js_da_all_transactions_by_signer result to True
+
+===== Processing RUST SDK DA All Transactions by Signer =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+error[E0308]: mismatched types
+  --> src/main.rs:48:5
+   |
+46 | async fn main() {
+   |                - expected `()` because of default return type
+47 |     fetch_transactions_by_signer().await?;
+48 |     Ok(())
+   |     ^^^^^^ expected `()`, found `Result<(), _>`
+   |
+   = note: expected unit type `()`
+                   found enum `Result<(), _>`
+help: consider using `Result::expect` to unwrap the `Result<(), _>` value, panicking if the value is a `Result::Err`
+   |
+48 |     Ok(()).expect("REASON")
+   |           +++++++++++++++++
+
+For more information about this error, try `rustc --explain E0308`.
+error: could not compile `avail-rust` (bin "avail-rust") due to 1 previous error
+
+RUST DA All Transactions by Signer failed or didn't complete successfully
+Adding missing key: avail_rust_da_all_transactions_by_signer
+Updated avail_rust_da_all_transactions_by_signer result to False
+
+===== Processing GO SDK DA All Transactions by Signer =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+
+Error output:
+# command-line-arguments
+./main.go:31:60: cannot use "5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg" (untyped string constant) as primitives.MultiAddress value in argument to primitives.NewAccountIdFromMultiAddress
+
+GO DA All Transactions by Signer failed or didn't complete successfully
+Adding missing key: avail_go_da_all_transactions_by_signer
+Updated avail_go_da_all_transactions_by_signer result to False
+
+=== Test Results Summary ===
+JavaScript DA All Transactions by Signer: ✅ Success
+Rust DA All Transactions by Signer: ❌ Failed
+Go DA All Transactions by Signer: ❌ Failed
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = False
+go_snippetrunresult = False
+
+Overall test result: ❌ Failed
+
+All Transactions by Signer script completed with return code: 1
+WARNING: All Transactions by Signer script returned non-zero exit code: 1
+
+================================================
+
+=== Running Fetch All Transactions script ===
+Script path: /root/desktop/scripts/snippets/fetch_all_transactions.py
+Script directory: /root/desktop/scripts/snippets
+=== Running Fetch All Transactions Test for All SDKs ===
+
+===== Processing JS SDK Fetch All Transactions =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
+Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
+Running command in /root/desktop/avail-js: ts-node your-file-name.ts
+Command output:
+Looking up all transactions in block: 0x9016d7953c88115534a602f2d2548c70c4f5b378d86f4bedda82be2655467c5d
+Found 4 transaction(s)
+
+Transaction Details:
+Pallet Name: timestamp
+Pallet Index: 3
+Call Name: set
+Call Index: 0
+Tx Hash: 0x145a04a7dbb2d86f13fa144bd03b4dcee47637c87169f53af3b02f0ce3ab5867
+Tx Index: 0
+Signer: undefined
+---
+Pallet Name: dataAvailability
+Pallet Index: 29
+Call Name: submitData
+Call Index: 1
+Tx Hash: 0x9ab121a02aa674746623b011517ffe45e7e29765e17cc2e39465a4d89d0bc258
+Tx Index: 1
+Signer: 5EHQtLHiLZsuJoa1SErufLdJQG8bRqoTVAQiXGhP3XsbeHMj
+---
+Pallet Name: dataAvailability
+Pallet Index: 29
+Call Name: submitData
+Call Index: 1
+Tx Hash: 0xc73b2779f6b389d4e409256429749b74fa401aef7dac2c2617e15656ef9e743f
+Tx Index: 2
+Signer: 5CyLaR5W5KS8LDfpNwxREugMxn7cBoN3ZtfS6rEhidQMztNk
+---
+Pallet Name: vector
+Pallet Index: 39
+Call Name: failedSendMessageTxs
+Call Index: 11
+Tx Hash: 0x92cdb77314063a01930b093516d19a453399710cc8ae635ff5ab6cf76b26f218
+Tx Index: 3
+Signer: undefined
+---
+Transaction retrieval completed successfully
+
+Error output:
+2025-03-30 18:07:47 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-03-30 18:07:49 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+
+JS Fetch All Transactions was successful!
+Adding missing key: avail_js_fetch_all_transactions
+Updated avail_js_fetch_all_transactions result to True
+
+===== Processing RUST SDK Fetch All Transactions =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
+Successfully wrote code to /root/desktop/avail-rust/src/main.rs
+Running command in /root/desktop/avail-rust: cargo run
+Command output:
+Pallet Name: Ok("Timestamp"), Pallet Index: 3, Call Name: Ok("set"), Call Index: 0, Tx Hash: 0x145a04a7dbb2d86f13fa144bd03b4dcee47637c87169f53af3b02f0ce3ab5867, Tx Index: 0
+Tx Signer: None, App Id: None, Tip: None, Mortality: None, Nonce: None
+Pallet Name: Ok("DataAvailability"), Pallet Index: 29, Call Name: Ok("submit_data"), Call Index: 1, Tx Hash: 0x9ab121a02aa674746623b011517ffe45e7e29765e17cc2e39465a4d89d0bc258, Tx Index: 1
+Tx Signer: Some("5EHQtLHiLZsuJoa1SErufLdJQG8bRqoTVAQiXGhP3XsbeHMj"), App Id: Some(222), Tip: Some(0), Mortality: Some(Mortal { period: 32, phase: 19 }), Nonce: Some(36159)
+Pallet Name: Ok("DataAvailability"), Pallet Index: 29, Call Name: Ok("submit_data"), Call Index: 1, Tx Hash: 0xc73b2779f6b389d4e409256429749b74fa401aef7dac2c2617e15656ef9e743f, Tx Index: 2
+Tx Signer: Some("5CyLaR5W5KS8LDfpNwxREugMxn7cBoN3ZtfS6rEhidQMztNk"), App Id: Some(222), Tip: Some(0), Mortality: Some(Mortal { period: 32, phase: 19 }), Nonce: Some(11007)
+Pallet Name: Ok("Vector"), Pallet Index: 39, Call Name: Ok("failed_send_message_txs"), Call Index: 11, Tx Hash: 0x92cdb77314063a01930b093516d19a453399710cc8ae635ff5ab6cf76b26f218, Tx Index: 3
+Tx Signer: None, App Id: None, Tip: None, Mortality: None, Nonce: None
+Transaction retrieval completed successfully
+
+Error output:
+   Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.83s
+     Running `target/debug/avail-rust`
+
+RUST Fetch All Transactions was successful!
+Adding missing key: avail_rust_fetch_all_transactions
+Updated avail_rust_fetch_all_transactions result to True
+
+===== Processing GO SDK Fetch All Transactions =====
+Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/docs/build-with-avail/interact-with-avail-da/read-write-on-avail/page.mdx
+Successfully wiped contents of /root/desktop/avail-go/main.go
+Successfully wrote code to /root/desktop/avail-go/main.go
+Running command in /root/desktop/avail-go: go run main.go
+Command output:
+Transaction Count:  4
+Pallet Name: Timestamp, Pallet Index: 3, Call Name: set, Call Index: 0, Tx Hash: 0x145a04a7dbb2d86f13fa144bd03b4dcee47637c87169f53af3b02f0ce3ab5867, Tx Index: 0
+Tx Signer: None, App Id: None, Tip: None, Mortality: None, Nonce: None
+Pallet Name: DataAvailability, Pallet Index: 29, Call Name: submit_data, Call Index: 1, Tx Hash: 0x9ab121a02aa674746623b011517ffe45e7e29765e17cc2e39465a4d89d0bc258, Tx Index: 1
+Tx Signer: Some(5EHQtLHiLZsuJoa1SErufLdJQG8bRqoTVAQiXGhP3XsbeHMj), App Id: Some(222), Tip: Some(0.0 Avail), Mortality: Some(Mortal: {period: 32, phase: 19}), Nonce: Some(36159)
+Pallet Name: DataAvailability, Pallet Index: 29, Call Name: submit_data, Call Index: 1, Tx Hash: 0xc73b2779f6b389d4e409256429749b74fa401aef7dac2c2617e15656ef9e743f, Tx Index: 2
+Tx Signer: Some(5CyLaR5W5KS8LDfpNwxREugMxn7cBoN3ZtfS6rEhidQMztNk), App Id: Some(222), Tip: Some(0.0 Avail), Mortality: Some(Mortal: {period: 32, phase: 19}), Nonce: Some(11007)
+Pallet Name: Vector, Pallet Index: 39, Call Name: failed_send_message_txs, Call Index: 11, Tx Hash: 0x92cdb77314063a01930b093516d19a453399710cc8ae635ff5ab6cf76b26f218, Tx Index: 3
+Tx Signer: None, App Id: None, Tip: None, Mortality: None, Nonce: None
+Transaction retrieval completed successfully
+
+GO Fetch All Transactions was successful!
+Adding missing key: avail_go_fetch_all_transactions
+Updated avail_go_fetch_all_transactions result to True
+
+=== Test Results Summary ===
+JavaScript Fetch All Transactions: ✅ Success
+Rust Fetch All Transactions: ✅ Success
+Go Fetch All Transactions: ✅ Success
+
+Machine-readable results:
+js_snippetrunresult = True
+rust_snippetrunresult = True
+go_snippetrunresult = True
+
+Overall test result: ✅ Success
+
+Fetch All Transactions script completed with return code: 0
 
 ================================================
 
