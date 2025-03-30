@@ -282,6 +282,10 @@ try:
             "path": "scripts/snippets/da_submit_data.py"
         },
         {
+            "name": "Data Submission from Docs Section",
+            "path": "scripts/snippets/da_submit_data_from_docs_section.py"
+        },
+        {
             "name": "Create Application Key",
             "path": "scripts/snippets/da_create_application_key.py"
         },
@@ -290,8 +294,32 @@ try:
             "path": "scripts/snippets/balances_transfer_keep_alive.py"
         },
         {
+            "name": "Balances Transfer Keep Alive from Docs Section",
+            "path": "scripts/snippets/balances_transfer_keep_alive_from_docs_section.py"
+        },
+        {
             "name": "Balances Transfer Allow Death",
             "path": "scripts/snippets/balances_transfer_allow_death.py"
+        },
+        {
+            "name": "Balances Transfer Allow Death from Docs Section",
+            "path": "scripts/snippets/balances_transfer_allow_death_from_docs_section.py"
+        },
+        {
+            "name": "System Account Fetch",
+            "path": "scripts/snippets/system_account.py"
+        },
+        {
+            "name": "System Account Fetch from Docs Section",
+            "path": "scripts/snippets/system_account_from_docs_section.py"
+        },
+        {
+            "name": "DA Next App ID",
+            "path": "scripts/snippets/da_next_app_id.py"
+        },
+        {
+            "name": "DA App Keys",
+            "path": "scripts/snippets/da_app_keys.py"
         }
     ]
 
