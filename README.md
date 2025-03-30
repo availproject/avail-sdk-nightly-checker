@@ -5,7 +5,7 @@
 # Avail node docs nightly checker
 
 This is the first iteration of a bot that runs a daily check of code snippets documented under [Avail's developer documentation](https://docs.availproject.org/) and checks for breakages.
-
+We at Avail aim for a seamless developer experience with docs that work 100% of the time. This bot is an effort in that direction.
 
 
 ## How does it work? (This section is under progress)
