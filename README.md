@@ -25,4 +25,5 @@ This is the first iteration of a bot that runs a daily check of code snippets do
   6. This process is repeated `n` times till all individual scripts have been executed.
   7. After this process is completed, the environments created for each of the SDKs are deleted, thus ensuring a fresh setup at every single run.
   8. The complete logs of each run are stored in [last-run-log.txt](https://github.com/availproject/avail-sdk-nightly-checker/blob/main/last-run-log.txt)
-  9. This ensures that if we have any errors/breakage, we can diagnose the exact issue and push corrections to the docs conviniently.
+  9. Finally, the bot automatically pushes the latest versions of `run-results.json` & `last-run-log.txt` to this repo.
+  10. This ensures that if we have any errors/breakage, we can diagnose the exact issue and push corrections to the docs conveniently.
