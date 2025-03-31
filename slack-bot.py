@@ -52,11 +52,12 @@ message += f"• The full log file can be found at <https://github.com/availproj
 message += f"• The JSON formatted results can be found at <https://github.com/availproject/avail-sdk-nightly-checker/blob/main/run-results.json|run-results.json>\n\n"
 message += f"*Avail SDK Tests - Run at {formatted_time}*\n```\n"
 
-for label, value in results.items():
+# Use enumerate to get both index and item
+for i, (label, value) in enumerate(results.items(), 1):  # Start counting from 1
     status = "✅" if value else "❌"
     # Format the label more nicely by replacing underscores with spaces and capitalizing
     display_label = label.replace("_", " ").title()
-    message += f"{display_label}: {status}\n"
+    message += f"{i}. {display_label}: {status}\n"  # Add the number with a period
 message += "```"
 
 try:

@@ -148,7 +148,7 @@ def process_rust():
     # Run the extracted command
     cmd_result = run_command(rust_run_cmd, RUST_TARGET_DIR)
     
-    if cmd_result and cmd_result.returncode == 0 and "transfer completed successfully" in cmd_result.stdout:
+    if cmd_result and cmd_result.returncode == 0 and "Transfer completed successfully" in cmd_result.stdout:
         result = True
         print("Rust transfer allow death was successful!")
     else:
