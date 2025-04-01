@@ -1,5 +1,5 @@
 {
-  "last_run_timestamp": "2025-03-31T00:15:38.299693",
+  "last_run_timestamp": "2025-04-01T00:15:23.083250",
   "results": {
     "avail_js_da_submit_data": true,
     "avail_rust_da_submit_data": true,
@@ -34,7 +34,7 @@
     "avail_js_da_app_keys": true,
     "avail_rust_da_app_keys": true,
     "avail_go_da_app_keys": true,
-    "avail_js_da_submission_using_txHash_blockHash": false,
+    "avail_js_da_submission_using_txHash_blockHash": true,
     "avail_rust_da_submission_using_txHash_blockHash": true,
     "avail_go_da_submission_using_txHash_blockHash": true,
     "avail_js_da_submission_using_appID": true,
@@ -44,8 +44,8 @@
     "avail_rust_da_all_da_submissions": true,
     "avail_go_da_all_da_submissions": true,
     "avail_js_da_all_transactions_by_signer": true,
-    "avail_rust_da_all_transactions_by_signer": false,
-    "avail_go_da_all_transactions_by_signer": false,
+    "avail_rust_da_all_transactions_by_signer": true,
+    "avail_go_da_all_transactions_by_signer": true,
     "avail_js_fetch_all_transactions": true,
     "avail_rust_fetch_all_transactions": true,
     "avail_go_fetch_all_transactions": true
