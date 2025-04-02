@@ -28,27 +28,35 @@ Command execution succeeded
 Found command cmd3: pnpm add avail-js-sdk@0.4.0
 Running command: pnpm add avail-js-sdk@0.4.0
 Command output: Progress: resolved 1, reused 0, downloaded 0, added 0
-Progress: resolved 1, reused 1, downloaded 0, added 0
+
+   ╭──────────────────────────────────────────────╮
+   │                                              │
+   │      Update available! 10.6.3 → 10.7.1.      │
+   │     Changelog: https://pnpm.io/v/10.7.1      │
+   │   To update, run: corepack use pnpm@10.7.1   │
+   │                                              │
+   ╰──────────────────────────────────────────────╯
+
+Progress: resolved 2, reused 1, downloaded 0, added 0
 Progress: resolved 2, reused 2, downloaded 0, added 0
-Progress: resolved 18, reused 17, downloaded 0, added 0
 Progress: resolved 18, reused 18, downloaded 0, added 0
-Progress: resolved 22, reused 22, downloaded 0, added 0
-Progress: resolved 35, reused 35, downloaded 0, added 0
-Progress: resolved 36, reused 36, downloaded 0, added 0
-Progress: resolved 58, reused 58, downloaded 0, added 0
-Progress: resolved 59, reused 58, downloaded 0, added 0
-Progress: resolved 62, reused 62, downloaded 0, added 0
-Progress: resolved 63, reused 63, downloaded 0, added 0
-Progress: resolved 69, reused 69, downloaded 0, added 0
+Progress: resolved 19, reused 18, downloaded 0, added 0
+Progress: resolved 32, reused 32, downloaded 0, added 0
+Progress: resolved 38, reused 37, downloaded 1, added 0
+Progress: resolved 52, reused 51, downloaded 1, added 0
+Progress: resolved 57, reused 56, downloaded 1, added 0
+Progress: resolved 62, reused 61, downloaded 1, added 0
+Progress: resolved 64, reused 63, downloaded 1, added 0
+Progress: resolved 69, reused 68, downloaded 1, added 0
  WARN  1 deprecated subdependencies found: @substrate/connect@0.8.11
 Packages: +70
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-Progress: resolved 70, reused 70, downloaded 0, added 70, done
+Progress: resolved 70, reused 69, downloaded 1, added 70, done
 
 dependencies:
 + avail-js-sdk 0.4.0
 
-Done in 13.1s using pnpm v10.6.3
+Done in 12.6s using pnpm v10.6.3
 
 Command execution succeeded
 Found command cmd5: touch tsconfig.json
@@ -71,7 +79,7 @@ Progress: resolved 71, reused 71, downloaded 0, added 1, done
 dependencies:
 + dotenv 16.4.7
 
-Done in 1s using pnpm v10.6.3
+Done in 1.1s using pnpm v10.6.3
 
 Running part 2/2: touch .env
 Running command: touch .env
@@ -126,8 +134,9 @@ Cargo build stderr:
       Adding crypto-mac v0.11.0 (available: v0.11.1)
       Adding unicode-normalization v0.1.22 (available: v0.1.24)
  Downloading crates ...
-  Downloaded hyper-util v0.1.11
-  Downloaded iana-time-zone v0.1.63
+  Downloaded env_logger v0.11.8
+  Downloaded jobserver v0.1.33
+  Downloaded rustix v1.0.5
    Compiling unicode-ident v1.0.18
    Compiling proc-macro2 v1.0.94
    Compiling cfg-if v1.0.0
@@ -135,51 +144,51 @@ Cargo build stderr:
    Compiling version_check v0.9.5
    Compiling libc v0.2.171
    Compiling typenum v1.18.0
-   Compiling equivalent v1.0.2
    Compiling hashbrown v0.15.2
    Compiling quote v1.0.40
-   Compiling syn v2.0.100
+   Compiling equivalent v1.0.2
    Compiling indexmap v2.8.0
-   Compiling getrandom v0.2.15
+   Compiling syn v2.0.100
    Compiling autocfg v1.4.0
    Compiling winnow v0.7.4
+   Compiling getrandom v0.2.15
    Compiling once_cell v1.21.3
    Compiling subtle v2.6.1
    Compiling rustversion v1.0.20
    Compiling rand_core v0.6.4
    Compiling generic-array v0.14.7
    Compiling zerocopy v0.8.24
-   Compiling unicode-xid v0.2.6
    Compiling bytes v1.10.1
+   Compiling unicode-xid v0.2.6
    Compiling const_format_proc_macros v0.2.34
    Compiling radium v0.7.0
    Compiling byte-slice-cast v1.2.3
    Compiling tap v1.0.1
    Compiling wyz v0.5.1
    Compiling const_format v0.2.34
-   Compiling ppv-lite86 v0.2.21
    Compiling smallvec v1.14.0
    Compiling funty v2.0.0
+   Compiling ppv-lite86 v0.2.21
    Compiling arrayvec v0.7.6
-   Compiling memchr v2.7.4
    Compiling const-oid v0.9.6
    Compiling bitvec v1.0.1
    Compiling byteorder v1.5.0
+   Compiling memchr v2.7.4
    Compiling shlex v1.3.0
    Compiling cc v1.2.17
    Compiling rand_chacha v0.3.1
-   Compiling serde_derive v1.0.219
-   Compiling zeroize_derive v1.4.2
-   Compiling zeroize v1.8.1
-   Compiling impl-trait-for-tuples v0.2.3
-   Compiling derive_more-impl v1.0.0
    Compiling static_assertions v1.1.0
-   Compiling block-buffer v0.10.4
-   Compiling crypto-common v0.1.6
    Compiling rand v0.8.5
    Compiling cpufeatures v0.2.17
-   Compiling digest v0.10.7
    Compiling parity-scale-codec v3.7.4
+   Compiling serde_derive v1.0.219
+   Compiling zeroize_derive v1.4.2
+   Compiling impl-trait-for-tuples v0.2.3
+   Compiling derive_more-impl v1.0.0
+   Compiling zeroize v1.8.1
+   Compiling block-buffer v0.10.4
+   Compiling crypto-common v0.1.6
+   Compiling digest v0.10.7
    Compiling synstructure v0.13.1
    Compiling stable_deref_trait v1.2.0
    Compiling zerofrom-derive v0.1.6
@@ -193,71 +202,71 @@ Cargo build stderr:
    Compiling yoke v0.7.5
    Compiling keccak v0.1.5
    Compiling zerovec v0.10.4
-   Compiling arrayref v0.3.9
    Compiling crunchy v0.2.3
    Compiling zerocopy v0.7.35
+   Compiling arrayref v0.3.9
+   Compiling icu_locid_transform_data v1.5.1
+   Compiling litemap v0.7.5
+   Compiling writeable v0.5.5
+   Compiling icu_provider_macros v1.5.0
+   Compiling icu_properties_data v1.5.1
+   Compiling tinystr v0.7.6
+   Compiling regex-syntax v0.8.5
+   Compiling icu_locid v1.5.0
    Compiling serde_spanned v0.6.8
    Compiling toml_datetime v0.6.8
    Compiling log v0.4.27
-   Compiling writeable v0.5.5
    Compiling toml_edit v0.22.24
-   Compiling icu_locid_transform_data v1.5.1
-   Compiling litemap v0.7.5
-   Compiling icu_provider_macros v1.5.0
-   Compiling tinystr v0.7.6
-   Compiling icu_locid v1.5.0
-   Compiling regex-syntax v0.8.5
-   Compiling icu_properties_data v1.5.1
    Compiling icu_provider v1.5.0
    Compiling tracing-core v0.1.33
-   Compiling futures-core v0.3.31
    Compiling icu_normalizer_data v1.5.1
-   Compiling proc-macro-crate v3.3.0
    Compiling constant_time_eq v0.3.1
+   Compiling futures-core v0.3.31
    Compiling icu_locid_transform v1.5.0
    Compiling icu_collections v1.5.0
-   Compiling parity-scale-codec-derive v3.7.4
-   Compiling scale-info-derive v2.11.6
+   Compiling proc-macro-crate v3.3.0
    Compiling ahash v0.8.11
    Compiling icu_properties v1.5.1
    Compiling hex v0.4.3
    Compiling tracing-attributes v0.1.28
    Compiling slab v0.4.9
    Compiling lock_api v0.4.12
-   Compiling parking_lot_core v0.9.10
-   Compiling futures-sink v0.3.31
-   Compiling write16 v1.0.0
    Compiling utf16_iter v1.0.5
-   Compiling utf8_iter v1.0.4
+   Compiling parity-scale-codec-derive v3.7.4
+   Compiling scale-info-derive v2.11.6
+   Compiling write16 v1.0.0
    Compiling ryu v1.0.20
-   Compiling scale-info v2.11.6
+   Compiling futures-sink v0.3.31
+   Compiling parking_lot_core v0.9.10
+   Compiling utf8_iter v1.0.4
    Compiling icu_normalizer v1.5.0
    Compiling tracing v0.1.41
-   Compiling futures-io v0.3.31
    Compiling scopeguard v1.2.0
    Compiling rustc-hex v2.1.0
    Compiling thiserror v1.0.69
+   Compiling futures-io v0.3.31
    Compiling idna_adapter v1.2.0
    Compiling thiserror-impl v1.0.69
    Compiling percent-encoding v2.3.1
    Compiling form_urlencoded v1.2.1
    Compiling parking_lot v0.12.3
+   Compiling scale-info v2.11.6
    Compiling idna v1.0.3
    Compiling fixed-hash v0.8.0
    Compiling futures-channel v0.3.31
    Compiling futures-macro v0.3.31
-   Compiling pin-utils v0.1.0
    Compiling futures-task v0.3.31
    Compiling serde_json v1.0.140
+   Compiling pin-utils v0.1.0
    Compiling url v2.5.4
    Compiling futures-util v0.3.31
    Compiling sha2 v0.10.8
    Compiling indexmap v1.9.3
    Compiling aho-corasick v1.1.3
-   Compiling either v1.15.0
-   Compiling hashbrown v0.12.3
    Compiling lazy_static v1.5.0
+   Compiling either v1.15.0
    Compiling fnv v1.0.7
+   Compiling hashbrown v0.12.3
    Compiling regex-automata v0.4.9
    Compiling semver v1.0.26
    Compiling allocator-api2 v0.2.21
@@ -266,42 +275,42 @@ Cargo build stderr:
    Compiling rustc_version v0.4.1
    Compiling blake2b_simd v1.0.3
    Compiling sha3 v0.10.8
-   Compiling regex v1.11.1
    Compiling twox-hash v1.6.3
-   Compiling prettyplease v0.2.31
+   Compiling regex v1.11.1
    Compiling anyhow v1.0.97
    Compiling target-lexicon v0.12.16
    Compiling sp-std v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling rustix v0.38.44
-   Compiling fallible-iterator v0.2.0
    Compiling io-lifetimes v1.0.11
+   Compiling rustix v0.38.44
+   Compiling prettyplease v0.2.31
+   Compiling fallible-iterator v0.2.0
    Compiling gimli v0.27.3
    Compiling Inflector v0.11.4
    Compiling curve25519-dalek v4.1.3
    Compiling wasmparser v0.102.0
    Compiling cranelift-entity v0.95.1
    Compiling digest v0.9.0
-   Compiling fs-err v2.11.0
-   Compiling memoffset v0.8.0
    Compiling num_cpus v1.16.0
+   Compiling memoffset v0.8.0
+   Compiling fs-err v2.11.0
    Compiling crc32fast v1.4.2
    Compiling bitflags v2.9.0
    Compiling linux-raw-sys v0.4.15
-   Compiling paste v1.0.15
    Compiling base64 v0.22.1
+   Compiling paste v1.0.15
    Compiling rustix v0.36.17
-   Compiling wasmtime-types v8.0.1
    Compiling object v0.30.4
    Compiling futures-executor v0.3.31
-   Compiling wasmtime-runtime v8.0.1
+   Compiling wasmtime-types v8.0.1
    Compiling curve25519-dalek-derive v0.1.1
+   Compiling wasmtime-runtime v8.0.1
    Compiling bitflags v1.3.2
-   Compiling rustc-demangle v0.1.24
    Compiling expander v2.2.1
+   Compiling rustc-demangle v0.1.24
    Compiling linux-raw-sys v0.1.4
    Compiling cpp_demangle v0.3.5
-   Compiling libsecp256k1-core v0.3.0
    Compiling wasmtime-environ v8.0.1
+   Compiling libsecp256k1-core v0.3.0
    Compiling memfd v0.6.4
    Compiling futures v0.3.31
    Compiling hashbrown v0.14.5
@@ -314,40 +323,40 @@ Cargo build stderr:
    Compiling regex-syntax v0.6.29
    Compiling ref-cast v1.0.24
    Compiling bitcoin-internals v0.2.0
-   Compiling regex-automata v0.1.10
    Compiling addr2line v0.19.0
-   Compiling impl-serde v0.4.0
+   Compiling regex-automata v0.1.10
    Compiling bincode v1.3.3
+   Compiling impl-serde v0.4.0
    Compiling merlin v3.0.0
-   Compiling ref-cast-impl v1.0.24
    Compiling sp-debug-derive v14.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling ref-cast-impl v1.0.24
    Compiling wasmtime-jit-icache-coherence v8.0.1
    Compiling iana-time-zone v0.1.63
-   Compiling hash-db v0.16.0
-   Compiling wasmtime v8.0.1
    Compiling tinyvec_macros v0.1.1
-   Compiling tinyvec v1.9.0
+   Compiling wasmtime v8.0.1
+   Compiling hash-db v0.16.0
    Compiling chrono v0.4.40
+   Compiling tinyvec v1.9.0
    Compiling wasmtime-jit v8.0.1
    Compiling matchers v0.0.1
-   Compiling libsecp256k1-gen-ecmult v0.3.0
    Compiling libsecp256k1-gen-genmult v0.3.0
+   Compiling libsecp256k1-gen-ecmult v0.3.0
    Compiling sharded-slab v0.1.7
-   Compiling tracing-serde v0.1.3
    Compiling tracing-log v0.1.4
+   Compiling tracing-serde v0.1.3
    Compiling serde_bytes v0.11.17
-   Compiling getrandom_or_panic v0.0.3
-   Compiling crypto-mac v0.8.0
-   Compiling crypto-mac v0.11.0
    Compiling block-buffer v0.9.0
+   Compiling crypto-mac v0.11.0
+   Compiling crypto-mac v0.8.0
+   Compiling getrandom_or_panic v0.0.3
    Compiling secp256k1-sys v0.9.2
    Compiling thread_local v1.1.8
-   Compiling hex-conservative v0.1.2
    Compiling ansi_term v0.12.1
    Compiling opaque-debug v0.3.1
-   Compiling bitcoin_hashes v0.13.0
-   Compiling sha2 v0.9.9
+   Compiling hex-conservative v0.1.2
    Compiling tracing-subscriber v0.2.25
+   Compiling sha2 v0.9.9
+   Compiling bitcoin_hashes v0.13.0
    Compiling schnorrkel v0.11.4
    Compiling hmac v0.8.1
    Compiling ss58-registry v1.51.0
@@ -358,21 +367,21 @@ Cargo build stderr:
    Compiling itertools v0.10.5
    Compiling impl-codec v0.6.0
    Compiling uint v0.9.5
-   Compiling thiserror v2.0.12
    Compiling environmental v1.1.4
+   Compiling thiserror v2.0.12
    Compiling sp-externalities v0.25.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling primitive-types v0.12.2
    Compiling sp-wasm-interface v20.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling bip39 v2.1.0
-   Compiling sp-tracing v16.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hmac-drbg v0.3.0
-   Compiling hmac v0.11.0
+   Compiling sp-tracing v16.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling pbkdf2 v0.8.0
+   Compiling hmac v0.11.0
    Compiling sp-runtime-interface-proc-macro v17.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling bounded-collections v0.2.4
    Compiling num-format v0.4.4
-   Compiling dyn-clonable-impl v0.9.2
    Compiling thiserror-impl v2.0.12
+   Compiling dyn-clonable-impl v0.9.2
    Compiling derive-syn-parse v0.2.0
    Compiling syn v1.0.109
    Compiling dyn-clone v1.0.19
@@ -385,29 +394,29 @@ Cargo build stderr:
    Compiling sp-crypto-hashing v0.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hash256-std-hasher v0.15.2
    Compiling secrecy v0.8.0
-   Compiling bs58 v0.5.1
    Compiling array-bytes v6.2.3
+   Compiling bs58 v0.5.1
    Compiling gimli v0.31.1
    Compiling adler2 v2.0.0
    Compiling miniz_oxide v0.8.5
-   Compiling sp-core v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling addr2line v0.24.2
+   Compiling sp-core v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling impl-codec v0.7.1
    Compiling uint v0.10.0
    Compiling impl-serde v0.5.0
    Compiling tokio-macros v2.5.0
    Compiling socket2 v0.5.9
-   Compiling signal-hook-registry v1.4.2
    Compiling mio v1.0.3
-   Compiling strsim v0.11.1
+   Compiling signal-hook-registry v1.4.2
    Compiling ident_case v1.0.1
-   Compiling darling_core v0.20.11
+   Compiling strsim v0.11.1
    Compiling tokio v1.44.1
    Compiling backtrace v0.3.74
+   Compiling darling_core v0.20.11
    Compiling primitive-types v0.13.1
-   Compiling memory-db v0.32.0
-   Compiling trie-db v0.28.0
    Compiling trie-root v0.18.0
+   Compiling trie-db v0.28.0
+   Compiling memory-db v0.32.0
    Compiling schnellru v0.2.4
    Compiling http v1.3.1
    Compiling ring v0.17.14
@@ -416,8 +425,8 @@ Cargo build stderr:
    Compiling darling_macro v0.20.11
    Compiling sp-panic-handler v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-io v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling tiny-keccak v2.0.2
    Compiling same-file v1.0.6
+   Compiling tiny-keccak v2.0.2
    Compiling walkdir v2.5.0
    Compiling darling v0.20.11
    Compiling sp-keystore v0.34.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
@@ -425,27 +434,27 @@ Cargo build stderr:
    Compiling ed25519-dalek v2.1.1
    Compiling integer-sqrt v0.1.5
    Compiling toml v0.8.20
-   Compiling httparse v1.10.1
    Compiling rustls-pki-types v1.11.0
-   Compiling termcolor v1.4.1
-   Compiling common-path v1.0.0
+   Compiling httparse v1.10.1
    Compiling untrusted v0.9.0
+   Compiling common-path v1.0.0
+   Compiling termcolor v1.4.1
    Compiling docify_macros v0.2.9
    Compiling sp-arithmetic v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling http-body v1.0.1
    Compiling async-trait v0.1.88
-   Compiling rustls v0.23.25
    Compiling crossbeam-utils v0.8.21
-   Compiling sp-weights v27.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling rustls v0.23.25
    Compiling const-random-macro v0.1.16
+   Compiling sp-application-crypto v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling sp-weights v27.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling docify v0.2.9
    Compiling rustls-webpki v0.103.1
-   Compiling sp-application-crypto v30.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling tokio-util v0.7.14
    Compiling scale-type-resolver v0.2.0
    Compiling pin-project-internal v1.1.10
-   Compiling simple-mermaid v0.1.0 (https://github.com/kianenigma/simple-mermaid.git?rev=e48b187bcfd5cc75111acd9d241f1bd36604344b#e48b187b)
    Compiling wasm-bindgen-shared v0.2.100
+   Compiling simple-mermaid v0.1.0 (https://github.com/kianenigma/simple-mermaid.git?rev=e48b187bcfd5cc75111acd9d241f1bd36604344b#e48b187b)
    Compiling sp-runtime v31.0.1 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling scale-bits v0.7.0
    Compiling const-random v0.1.18
@@ -458,17 +467,17 @@ Cargo build stderr:
    Compiling hmac v0.12.1
    Compiling ff v0.13.1
    Compiling proc-macro-error-attr v1.0.4
-   Compiling try-lock v0.2.5
    Compiling bumpalo v3.17.0
-   Compiling futures-timer v3.0.3
+   Compiling try-lock v0.2.5
    Compiling atomic-waker v1.1.2
-   Compiling rayon-core v1.12.1
    Compiling base16ct v0.2.0
+   Compiling futures-timer v3.0.3
    Compiling openssl-probe v0.1.6
-   Compiling sec1 v0.7.3
+   Compiling rayon-core v1.12.1
    Compiling wasm-bindgen-backend v0.2.100
    Compiling rustls-native-certs v0.8.1
    Compiling tokio-rustls v0.26.2
+   Compiling sec1 v0.7.3
    Compiling h2 v0.4.8
    Compiling scale-decode v0.16.0
    Compiling want v0.3.1
@@ -489,9 +498,9 @@ Cargo build stderr:
    Compiling parity-wasm v0.45.0
    Compiling jsonrpsee-core v0.24.9
    Compiling elliptic-curve v0.13.8
-   Compiling sp-metadata-ir v0.6.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling hyper v1.6.0
    Compiling sp-version v29.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling hyper v1.6.0
+   Compiling sp-metadata-ir v0.6.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling rustls-platform-verifier v0.5.1
    Compiling wasm-bindgen-macro-support v0.2.100
    Compiling rfc6979 v0.4.0
@@ -507,66 +516,66 @@ Cargo build stderr:
    Compiling frame-support-procedural-tools v10.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling include_dir v0.7.4
    Compiling frame-decode v0.6.1
-   Compiling soketto v0.8.1
    Compiling dusk-bytes v0.1.7
-   Compiling wasm-bindgen-macro v0.2.100
+   Compiling soketto v0.8.1
    Compiling scale-encode v0.10.0
+   Compiling wasm-bindgen-macro v0.2.100
    Compiling ecdsa v0.16.9
    Compiling rayon v1.10.0
    Compiling hyper-util v0.1.11
    Compiling polkadot-sdk v0.7.0
    Compiling macro_magic v0.5.1
    Compiling cfg-expr v0.15.8
-   Compiling derive-syn-parse v0.1.5
    Compiling sp-api v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling derive-syn-parse v0.1.5
    Compiling secp256k1-sys v0.10.1
    Compiling proc-macro-warning v1.84.1
    Compiling tower-layer v0.3.3
    Compiling yap v0.12.0
    Compiling base58 v0.2.0
+   Compiling tower v0.4.13
    Compiling dusk-bls12_381 v0.11.3
    Compiling scale-value v0.18.0
-   Compiling tower v0.4.13
    Compiling frame-support-procedural v23.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-genesis-builder v0.7.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling hyper-rustls v0.27.5
    Compiling subxt-metadata v0.39.0
-   Compiling aquamarine v0.5.0
    Compiling k256 v0.13.4
+   Compiling aquamarine v0.5.0
    Compiling jsonrpsee-client-transport v0.24.9
-   Compiling sp-staking v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling sp-inherents v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
+   Compiling sp-staking v26.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling keccak-hash v0.11.0
    Compiling scale-typegen v0.10.0
    Compiling ethereum-types v0.15.1
    Compiling thiserror-impl-no-std v2.0.2
    Compiling derive-where v1.2.7
    Compiling proc-macro-error-attr2 v2.0.0
-   Compiling tt-call v1.0.9
-   Compiling utf8parse v0.2.2
-   Compiling base64ct v1.7.3
    Compiling heck v0.5.0
+   Compiling tt-call v1.0.9
+   Compiling base64ct v1.7.3
+   Compiling utf8parse v0.2.2
    Compiling ahash v0.4.8
+   Compiling hashbrown v0.9.1
+   Compiling subxt-core v0.39.0
    Compiling subxt-utils-fetchmetadata v0.39.0
    Compiling password-hash v0.5.0
-   Compiling hashbrown v0.9.1
-   Compiling subxt-codegen v0.39.0
    Compiling anstyle-parse v0.2.6
-   Compiling subxt-core v0.39.0
+   Compiling subxt-codegen v0.39.0
    Compiling proc-macro-error2 v2.0.1
    Compiling thiserror-no-std v2.0.2
    Compiling ethabi-decode v2.0.0 (https://github.com/Snowfork/ethabi-decode.git?branch=master#d39408b5)
-   Compiling jsonrpsee-ws-client v0.24.9
    Compiling js-sys v0.3.77
+   Compiling jsonrpsee-ws-client v0.24.9
    Compiling jsonrpsee-http-client v0.24.9
    Compiling dusk-jubjub v0.12.1
    Compiling binary-merkle-tree v13.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
    Compiling itertools v0.9.0
-   Compiling derive_more v0.99.19
    Compiling frame-support v28.0.0 (https://github.com/availproject/polkadot-sdk.git?tag=polkadot-1.7.1-patch-12#1d7cf631)
-   Compiling colorchoice v1.0.3
+   Compiling derive_more v0.99.19
    Compiling anstyle-query v1.1.2
    Compiling is_terminal_polyfill v1.70.1
+   Compiling colorchoice v1.0.3
    Compiling anstyle v1.0.10
    Compiling anstream v0.6.18
    Compiling wasm-bindgen-futures v0.4.50
@@ -578,17 +587,17 @@ Cargo build stderr:
    Compiling finito v0.1.0
    Compiling env_filter v0.1.3
    Compiling secrecy v0.10.3
-   Compiling jiff v0.2.5
    Compiling web-time v1.1.0
+   Compiling jiff v0.2.5
    Compiling subxt v0.39.0
    Compiling subxt-signer v0.39.0
    Compiling dotenvy v0.15.7
-   Compiling env_logger v0.11.7
+   Compiling env_logger v0.11.8
    Compiling avail-core v0.6.2 (https://github.com/availproject/avail-core?tag=core-node-7#70458d54)
    Compiling kate-recovery v0.10.0 (https://github.com/availproject/avail-core?tag=core-node-7#70458d54)
    Compiling avail-rust v0.1.5 (https://github.com/availproject/avail-rust?tag=v0.1.5#4878b659)
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 20s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 3m 14s
 
 Cargo build completed successfully
 Rust development environment setup completed successfully!
@@ -664,14 +673,14 @@ Command output:
 Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Submitting data to App Id: 89
 Submitting transaction with data...
-Block Hash: 0xc1f8d0add3fd8d18cc92153c8a9d3abf75a33df795d4b163b5ef02cd6b68f0fb, Block Number: 1588068, Tx Hash: 0xcbe1c06f92999f3383a3a53465b665d5c9b18d9093ad16efaed2ce8ed5ed17c0, Tx Index: 1
+Block Hash: 0xb85935e155866662c09cef85ace8865197083a5caad434cef7702dd81a0d8b9a, Block Number: 1592388, Tx Hash: 0x33a1feb05aa2009c58057ed3213904bc286b3f7d2f3dd64d4b7770bed5636257, Tx Index: 1
 Data submitted successfully:
 Who: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 DataHash: 0xd92871f83b488631e262173785fc43a9818951188baa933653739bcc33fe8931
 Data submission completed successfully
 
 Error output:
-2025-04-01 00:03:57 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:03:48 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JavaScript data submission was successful!
 Updated avail_js_da_submit_data result to True
@@ -683,13 +692,13 @@ Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x7e7910eabb39cfc301f5daa12d85dde7651f30d11442adea06fbc76d06b2205f, Block Number: 1588069, Tx Hash: 0x72fe72de9e3a251bee9f29a16d220ebeae1a7a83245d88aca7d9ceade27cf549, Tx Index: 1
+Block Hash: 0x10f0700437fd3c24c5301fc2c46e5d73146f84bf66fc01d4afe1a436d9f28af9, Block Number: 1592389, Tx Hash: 0x9cd8c6bf672474ac0d877362356abb3a5068f2b7c3dd61059fee308756c82806, Tx Index: 1
 Call data: "My Data"
 Data Submission finished correctly
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.75s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.55s
      Running `target/debug/avail-rust`
 
 Rust data submission was successful!
@@ -702,7 +711,7 @@ Successfully wrote Go code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x28c199d77bf275d01644c8d9e1bfafc3ce5a24218c7f29632cbf271c46a3f126, Block Index: 1588070, Tx Hash: 0x6739fae7985a9db9c431a0b0ed8498d077343101c0a29ba69adf4ec5b0125ac4, Tx Index: 1
+Block Hash: 0x2c96bfa6f2b1d3f4a0ac523a81373a5672060743364798b0af78a1b9ae02a8d9, Block Index: 1592390, Tx Hash: 0x04c655f50ccc6d5d7b3eb999f9d84ee21a4889167486736de14bb880e15b2040, Tx Index: 1
 Data submission completed successfully
 
 Go data submission was successful!
@@ -738,14 +747,14 @@ Command output:
 Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Submitting data to App Id: 89
 Submitting transaction with data...
-Block Hash: 0x5d39dc9fb07031c7e98228f6f7a358b2940a2d9f56a8504b15b0323c3281a026, Block Number: 1588071, Tx Hash: 0x0fd044c20491fc2d3e7324b0100cb3e832b72fbbe4a6b31314e85abe8d210d86, Tx Index: 1
+Block Hash: 0xd71b26f5c62980aa4b73c682eb24e35819eaee8f5fe99d4d948864456a4f5ced, Block Number: 1592391, Tx Hash: 0xfaf8798283464577a0f57e1dcb34d808d85915a065850e3e672270516fdaf8b4, Tx Index: 1
 Data submitted successfully:
 Who: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 DataHash: 0xd92871f83b488631e262173785fc43a9818951188baa933653739bcc33fe8931
 Data submission completed successfully
 
 Error output:
-2025-04-01 00:04:52 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:04:53 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS Data Submission from Docs Section was successful!
 Updated avail_js_da_submit_data_from_docs_section result to True
@@ -757,13 +766,13 @@ Successfully wrote code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x7d1f86929e5f05cf1291d7d1e5d4b5ef26d03450bf2e383ccc3f126565973cd9, Block Number: 1588072, Tx Hash: 0xdc8ac390d2b300116c75cc7a43bcc519acd84ee84217cbd70aea709ee19632c1, Tx Index: 1
+Block Hash: 0xa74e17922a1142b49be6f8677796129db1e8c4cf9795b6c96fba1ee3c73accad, Block Number: 1592392, Tx Hash: 0x65e5eb06c1fd780d9f409bb5951fae3a23811fa73010de278577a1085cdb2e72, Tx Index: 1
 Call data: "My Data"
 Data Submission finished correctly
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.47s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.15s
      Running `target/debug/avail-rust`
 
 RUST Data Submission from Docs Section was successful!
@@ -776,7 +785,7 @@ Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x7653080cabc604e1e0e348d24003f1aa98c1f74a27a45b186674ab8c8535ecde, Block Index: 1588073, Tx Hash: 0xe1ccf035fd096eda54694f5e64160bfeba048720185a3ad1f7f829de1dbe26af, Tx Index: 1
+Block Hash: 0x13c55bd98ab2e5fc256b2c9faa3d35c61c1790af560b54090c2db8e91abac787, Block Index: 1592393, Tx Hash: 0x43a25b4b49bbd7b871f5e8209a442f12d0711b419896dc63724fafa061406553, Tx Index: 1
 Data submission completed successfully
 
 GO Data Submission from Docs Section was successful!
@@ -806,7 +815,7 @@ Script directory: /root/desktop/scripts/snippets
 ===== Processing JavaScript SDK =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
 Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
-Set unique application key: avail-js-automated-run-check-01-04-2025-20250401_000542
+Set unique application key: avail-js-automated-run-check-02-04-2025-20250402_000542
 Successfully wrote TypeScript code to /root/desktop/avail-js/your-file-name.ts
 Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
@@ -814,12 +823,12 @@ Account Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Submitting transaction to create application key...
 Application created successfully:
 Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Key: avail-js-automated-run-check-01-04-2025-20250401_000542
-App Id: 401
-Transaction Hash: 0x52a0809452d2713291cdf8110cd9efb41657ba5db491dff9209549d419015f00
+Key: avail-js-automated-run-check-02-04-2025-20250402_000542
+App Id: 404
+Transaction Hash: 0xf284a0b2ea17a09a04ea35c2db899a83def9090a24b4c27901fcf8f314837e84
 
 Error output:
-2025-04-01 00:05:52 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:05:54 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 Third line of output: Application created successfully:
 JavaScript application key creation was successful!
@@ -828,17 +837,17 @@ Updated avail_js_da_create_application_key result to True
 ===== Processing Rust SDK =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
 Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
-Set unique application key: avail-rust-automated-run-check-01-04-2025-20250401_000542
+Set unique application key: avail-rust-automated-run-check-02-04-2025-20250402_000542
 Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Application Key Created
-402
+405
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.29s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.00s
      Running `target/debug/avail-rust`
 
 Second last line of output: Application Key Created
@@ -848,14 +857,14 @@ Updated avail_rust_da_create_application_key result to True
 ===== Processing Go SDK =====
 Fetching markdown from https://raw.githubusercontent.com/availproject/docs/refs/heads/main/app/api-reference/avail-node-api/da-create-application-key/page.mdx
 Successfully wiped contents of /root/desktop/avail-go/main.go
-Set unique application key: avail-go-automated-run-check-01-04-2025-20250401_000542
+Set unique application key: avail-go-automated-run-check-02-04-2025-20250402_000542
 Successfully wrote Go code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Application Key Created Successfully
-Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3, Key: avail-go-automated-run-check-01-04-2025-20250401_000542, AppId: 403
-Block Hash: 0x73364b1296b38234a68ab064547f4e83b52ef806f6917a151aa339bf473a6fb3, Block Index: 1588076, Tx Hash: 0xecc647712d3da1798314ece24f2b8c5cf69843f46a18856604630a447fb2c996, Tx Index: 1
+Owner: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3, Key: avail-go-automated-run-check-02-04-2025-20250402_000542, AppId: 406
+Block Hash: 0xc79337fec9743dcc691e978c58e6baba59dc89c2a20b906fdafa0a2a06407d89, Block Index: 1592396, Tx Hash: 0xde8db75d3595678a89cb435a8e178f766525b3e1b5282103cdd754bba076dad1, Tx Index: 1
 Application Key Created
 
 Last line of output: Application Key Created
@@ -893,13 +902,13 @@ Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 Transfer Amount: 12 AVAIL
 Submitting transfer transaction...
-Transaction Hash: 0xe548e4b0c0748a9d7a6f73cd1e59dd995e278e531bc530ea92349e7f2f684a5c
-Block Hash: 0xa5c83806e86b350e5c37c8572b6945ca2c680dfa1f9fe20f56fb57b18d869a95
-Block Number: 1588077
+Transaction Hash: 0x24dadabc4a2bbaea614c7f49913ae7910841ef352b542a6655edf981003ac75c
+Block Hash: 0x17d53950fe8dd12986d262911d6d85821cf3c62cb04926f1db9928f28a54cea7
+Block Number: 1592397
 Transfer completed successfully
 
 Error output:
-2025-04-01 00:06:52 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:06:50 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JavaScript transfer keep alive was successful!
 Updated avail_js_balances_transfer_keep_alive result to True
@@ -911,12 +920,12 @@ Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x40c7690affa7a1053761acd992ba133f207b6a7b95af79a2d96302fad5c3146b, Block Number: 1588079, Tx Hash: 0x0d25d9105cf2bfb977537225c9b293530c86d69818b0e67ccbfa33e5152bac74, Tx Index: 1
+Block Hash: 0x6d5b97799a72d411c37476f1cbe39256576908ac6427f4afd61447aef74f5fda, Block Number: 1592398, Tx Hash: 0x6a9ef638b4530e31354f2f44960dcf32c8e0b991e0349a891f4e4ea61576fcda, Tx Index: 1
 Transfer completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.63s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.34s
      Running `target/debug/avail-rust`
 
 Rust transfer keep alive was successful!
@@ -930,7 +939,7 @@ Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Transaction successful
-Block Hash: 0x8142c629f47a1fd44e477b8e726a2549053ab41d055037fe8c15e26f2dc8d8b1, Block Index: 1588080, Tx Hash: 0xbcb67a43e7af701d62fb5d82182239b54d6a30e2358351f5a9075cd5cf97637b, Tx Index: 1
+Block Hash: 0x3367406ff2ec598cfa6a44032d0c9232776130473e1dd549c8b2bf57a6d27552, Block Index: 1592399, Tx Hash: 0x46c4815b8f17e9233a1461550037f70ac0159c5c542a9c69089b76e6ae0f7f0f, Tx Index: 1
 Transfer completed successfully
 
 Go transfer keep alive was successful!
@@ -967,13 +976,13 @@ Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 Transfer Amount: 12 AVAIL
 Submitting transfer transaction...
-Transaction Hash: 0xa56189fb63cf225110a9fd4b4e0ab6719111549b22945eccadcd613354ca3fef
-Block Hash: 0x936d038b0272d6120760d5b33369a2026f642e52511092d8187866b025331145
-Block Number: 1588081
+Transaction Hash: 0x8c312ce91baed417749d821570c53d373add12a1f50fe90f1f96cd9e7f34c082
+Block Hash: 0xbb6044cb26ad847d29900a0145cd15673adb9056ac434b127293cad308c39ea0
+Block Number: 1592400
 Transfer completed successfully
 
 Error output:
-2025-04-01 00:08:14 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:07:53 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS Balances Transfer Keep Alive from Docs Section was successful!
 Updated avail_js_balances_transfer_keep_alive_from_docs_section result to True
@@ -985,12 +994,12 @@ Successfully wrote code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0xf711ace41e5d9482382445abc67b85d33160702acd06551d75d540978813b141, Block Number: 1588082, Tx Hash: 0x5127a17caa265fb4ea765de944723bfbfda7d7569e6f231ddc99ecd6258bb1ad, Tx Index: 1
+Block Hash: 0x760f8d763df84e5d9940dfc0783dd0789f6eeb2f7e54d0a8045edc482a9a24f8, Block Number: 1592401, Tx Hash: 0x9e28c06ca7bf5b924c6e2a9105fef8bd90a47ebd299452669f98b783b7bff93d, Tx Index: 1
 Transfer completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.99s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.52s
      Running `target/debug/avail-rust`
 
 RUST Balances Transfer Keep Alive from Docs Section was successful!
@@ -1004,7 +1013,7 @@ Running command in /root/desktop/avail-go: go run main.go --config config.json
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Transaction successful
-Block Hash: 0x37c5de6ffbd89f97e99698e0398d4bc707e32fca31e8718bc93fd72e77bb862d, Block Index: 1588083, Tx Hash: 0xb1185ffc2f4b74143bbfdcc4c26759f0d4a6dddba396e7b246b1238d163741c1, Tx Index: 1
+Block Hash: 0xf6cc46342a468c7b2ff697e5f55bcef7b104e77755f0b9c1d3b1bd1f39e1c14c, Block Index: 1592402, Tx Hash: 0xda244ade6ebfc892dbb5027ec2473643928a6c13f1b91e86521fdccf9842d97d, Tx Index: 1
 Transfer completed successfully
 
 GO Balances Transfer Keep Alive from Docs Section was successful!
@@ -1040,13 +1049,13 @@ Command output:
 Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 Submitting transfer transaction...
-Transaction Hash: 0x3498f7c6fbadf2375e757b741c082ebfb761224ee83d5476153799bae66a239f
-Block Hash: 0xa0d5c8de3e9fc5372b8c92697ae2f6989f505b16730b5ee19eb8fe337d31219b
-Block Number: 1588084
+Transaction Hash: 0x7e5d951c89c22b1f88ac2f902e38f43652d465de8048e5a4c6126da12dc3cbf0
+Block Hash: 0x0ef8f65ad2862a9dc4467e0d7704f32e8fd05dd1386bfbef2d9adbbefffabd4f
+Block Number: 1592403
 Transfer completed successfully
 
 Error output:
-2025-04-01 00:09:15 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:08:52 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JavaScript transfer allow death was successful!
 Updated avail_js_balances_transfer_allow_death result to True
@@ -1058,12 +1067,12 @@ Successfully wrote Rust code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0x213a26ff6ed7cad205d0d227128aa7b59c5c3eec88e849f0a6f4e0642abc7c58, Block Number: 1588085, Tx Hash: 0x205842c9b666365b135d4926b367c5ae5499d3b34ec4c33d529a39e55cd6eed1, Tx Index: 1
+Block Hash: 0xe867092cfe313be5b87113f4a88a97a1dcc78a75ffda86393cfc837a32740fe2, Block Number: 1592404, Tx Hash: 0xb32c31dcdeb4a39e9908c69b8c822a5db964b8b67735ca7b31e8d48676f140ea, Tx Index: 1
 Transfer completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.27s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.50s
      Running `target/debug/avail-rust`
 
 Rust transfer allow death was successful!
@@ -1077,7 +1086,7 @@ Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Transaction successful
-Block Hash: 0x54f347250b9b935d64b93f20fb64ba77f729613c7eb25779205317d6ea2a57eb, Block Index: 1588086, Tx Hash: 0x2f36a3f20bc63d3070d16d4cea1d3033e004ee3ae6cf8cb9eed29ec6e3a7a0ff, Tx Index: 1
+Block Hash: 0x61ad036f9635030248599d66557adeca215e4ff3215c9e05740e6dc815aebba2, Block Index: 1592405, Tx Hash: 0xfc78b3a7d38a10377b406b896f51df2a6785ae756705575f70b2bb4ddd650e20, Tx Index: 1
 Transfer completed successfully
 
 Go transfer allow death was successful!
@@ -1113,13 +1122,13 @@ Command output:
 Sender Address:  5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Recipient Address:  5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 Submitting transfer transaction...
-Transaction Hash: 0x59b9f57e51337cf42563e2d83bbfb19c2be4bb55d112477f7773e1b2cf4bd3b8
-Block Hash: 0x06750af661dc51744b30a91fd9a4fdb53611bd470f5a754e0bc8518a7cc006f1
-Block Number: 1588087
+Transaction Hash: 0x9b03baafac5cb169f11ff6ba7c8f012dff753d7a00c94a806967e363ad5ba4f8
+Block Hash: 0xca653736367cce2251ea43847eef49f1f3779eb5db27a12f873323b6e0b89be5
+Block Number: 1592406
 Transfer completed successfully
 
 Error output:
-2025-04-01 00:10:14 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:09:50 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS Balances Transfer Allow Death from Docs Section was successful!
 Updated avail_js_balances_transfer_allow_death_from_docs_section result to True
@@ -1131,12 +1140,12 @@ Successfully wrote code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
 Account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
-Block Hash: 0xce0ea4953f1aa326d8ec51bc5f3ebd1fff770feceeb4d3b5da485fb3e1580a03, Block Number: 1588088, Tx Hash: 0x456d3c248d0183c2c0786901e2b329c589b2a21b491c43458efa00b472529838, Tx Index: 1
+Block Hash: 0xa2edfae474b8907bdb6907f6a0b2b2ff9e1187408d9f962994c300eda412c531, Block Number: 1592407, Tx Hash: 0x7504ffda16eff94c0799282faab98f24f9b511ac1cdf5d630f4f90793dfb9b8c, Tx Index: 1
 Transfer completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.09s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.68s
      Running `target/debug/avail-rust`
 
 RUST Balances Transfer Allow Death from Docs Section was successful!
@@ -1150,7 +1159,7 @@ Running command in /root/desktop/avail-go: go run main.go
 Command output:
 Your account Address: 5EekZ2ZJKqv1gTt5LFn1HZQcavNAsm65rK2rAv3vjnv4cDF3
 Transaction successful
-Block Hash: 0xf413c8a3de9b30853bb1e3496694fb169c317143e15dee073d5f6b9f90de652d, Block Index: 1588089, Tx Hash: 0xd0a89c805ff349453a716169c14a4269a130528a6220d177b83b932e49b447b5, Tx Index: 1
+Block Hash: 0x787b9eed54c54ebaab299d188388d602246be5aeab8649438a67f58c3818905f, Block Index: 1592408, Tx Hash: 0x909b28e52f2ed0c9b8cc5a190121a4107708eee93a12e1301c0a0924c3859b1b, Tx Index: 1
 Transfer completed successfully
 
 GO Balances Transfer Allow Death from Docs Section was successful!
@@ -1185,13 +1194,13 @@ Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
 Checking balance for address: 5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 The following balances are in the smallest units, divide by 10^18 to get the balance in AVAIL
-Free Balance: 14510268081861666399363
+Free Balance: 14598958081861666399363
 Reserved Balance: 15100000000000000000
 Frozen Balance: 1131938738398108251550
 Account information fetched successfully
 
 Error output:
-2025-04-01 00:11:14 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:10:51 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS System Account was successful!
 Updated avail_js_system_account result to True
@@ -1211,7 +1220,7 @@ Account information fetched successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 12.46s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 11.95s
      Running `target/debug/avail-rust`
 
 RUST System Account was successful!
@@ -1223,7 +1232,7 @@ Successfully wiped contents of /root/desktop/avail-go/main.go
 Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
-Free Balance:  14510.268081861666399363 Avail
+Free Balance:  14598.958081861666399363 Avail
 Reserved Balance:  15.1 Avail
 Frozen Balance:  1131.93873839810825155 Avail
 Account information fetched successfully
@@ -1260,13 +1269,13 @@ Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
 Checking balance for address: 5DDY2yzh8uCysYFAiRSTeQVwtZSKNF49CkQkyPH852xvrYKk
 The following balances are in the smallest units, divide by 10^18 to get the balance in AVAIL
-Free Balance: 14510268081861666399363
+Free Balance: 14598958081861666399363
 Reserved Balance: 15100000000000000000
 Frozen Balance: 1131938738398108251550
 Account information fetched successfully
 
 Error output:
-2025-04-01 00:11:46 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:11:19 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS System Account was successful!
 Updated avail_js_system_account_from_docs_section result to True
@@ -1286,7 +1295,7 @@ Account information fetched successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.02s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 8.23s
      Running `target/debug/avail-rust`
 
 RUST System Account was successful!
@@ -1298,7 +1307,7 @@ Successfully wiped contents of /root/desktop/avail-go/main.go
 Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
-Free Balance:  14510.268081861666399363 Avail
+Free Balance:  14598.958081861666399363 Avail
 Reserved Balance:  15.1 Avail
 Frozen Balance:  1131.93873839810825155 Avail
 Account information fetched successfully
@@ -1333,12 +1342,12 @@ Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
 Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
 Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
-Current block hash: 0x80c08aeffb044fe6eaceec41fd8053c7c3e1622fbbd445a0968621266af304a4
-Next available App ID is: 404
+Current block hash: 0xb343c9ceb739d0b885b15789894490459722b174b8e68e24eb6215af1f0e4074
+Next available App ID is: 407
 App ID fetched successfully
 
 Error output:
-2025-04-01 00:12:12 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:11:43 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS DA Next App ID was successful!
 Updated avail_js_da_next_app_id result to True
@@ -1349,12 +1358,12 @@ Successfully wiped contents of /root/desktop/avail-rust/src/main.rs
 Successfully wrote code to /root/desktop/avail-rust/src/main.rs
 Running command in /root/desktop/avail-rust: cargo run
 Command output:
-Next available App ID is: AppId(404)
+Next available App ID is: AppId(407)
 App ID fetched successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.00s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.62s
      Running `target/debug/avail-rust`
 
 RUST DA Next App ID was successful!
@@ -1366,7 +1375,7 @@ Successfully wiped contents of /root/desktop/avail-go/main.go
 Successfully wrote code to /root/desktop/avail-go/main.go
 Running command in /root/desktop/avail-go: go run main.go
 Command output:
-Next available App ID is: 404
+Next available App ID is: 407
 App ID fetched successfully
 
 GO DA Next App ID was successful!
@@ -1399,14 +1408,14 @@ Successfully wiped contents of /root/desktop/avail-js/your-file-name.ts
 Successfully wrote code to /root/desktop/avail-js/your-file-name.ts
 Running command in /root/desktop/avail-js: ts-node your-file-name.ts
 Command output:
-Current block hash: 0x2d83fc91f500cce973b0ce69a42eeaed31bd15b970d878c65ab3319d7cd0e7b5
+Current block hash: 0xc1009ce9565d3ea9e86a253e806fd2112d46df21676a87cbec081ca4cad3f826
 App ID: 291
 Owner: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
 Key: my Application Key Name!!!
 App Key fetched successfully
 
 Error output:
-2025-04-01 00:12:39 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:12:09 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS DA App Keys was successful!
 Updated avail_js_da_app_keys result to True
@@ -1421,7 +1430,7 @@ App Key fetched successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.37s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.56s
      Running `target/debug/avail-rust`
 [src/main.rs:17:5] result = Some(
     AppKeyInfo {
@@ -1524,8 +1533,8 @@ Signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
 Data retrieval completed successfully
 
 Error output:
-2025-04-01 00:13:06 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-2025-04-01 00:13:08 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:12:34 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:12:35 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS DA Submission using txHash and blockHash was successful!
 Updated avail_js_da_submission_using_txHash_blockHash result to True
@@ -1541,7 +1550,7 @@ Data retrieval completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.17s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.62s
      Running `target/debug/avail-rust`
 
 RUST DA Submission using txHash and blockHash was successful!
@@ -1600,8 +1609,8 @@ Signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
 Data retrieval completed successfully
 
 Error output:
-2025-04-01 00:13:36 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-2025-04-01 00:13:38 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:12:59 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:13:00 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS DA Submission using App ID was successful!
 Updated avail_js_da_submission_using_appID result to True
@@ -1617,7 +1626,7 @@ Data retrieval completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.99s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.59s
      Running `target/debug/avail-rust`
 
 RUST DA Submission using App ID was successful!
@@ -1694,8 +1703,8 @@ Signer: 5GrwvaEF5zXb26Fz9rcQpDWS57CtERHpNehXCPcNoHGKutQY
 Data retrieval completed successfully
 
 Error output:
-2025-04-01 00:14:04 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-2025-04-01 00:14:05 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:13:25 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:13:26 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS DA All DA Submissions was successful!
 Updated avail_js_da_all_da_submissions result to True
@@ -1714,7 +1723,7 @@ Data retrieval completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.62s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.45s
      Running `target/debug/avail-rust`
 
 RUST DA All DA Submissions was successful!
@@ -1779,8 +1788,8 @@ Signer: 5CqgQkrDcdg5QrtuxT3H7WszrqgrBMhdwRbmMVXQzc4VSiEg
 Transaction retrieval completed successfully
 
 Error output:
-2025-04-01 00:14:30 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-2025-04-01 00:14:32 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:13:49 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:13:50 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS DA All Transactions by Signer was successful!
 Updated avail_js_da_all_transactions_by_signer result to True
@@ -1797,7 +1806,7 @@ Transaction retrieval completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.77s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.40s
      Running `target/debug/avail-rust`
 
 RUST DA All Transactions by Signer was successful!
@@ -1883,8 +1892,8 @@ Signer: undefined
 Transaction retrieval completed successfully
 
 Error output:
-2025-04-01 00:15:01 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
-2025-04-01 00:15:03 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:14:16 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
+2025-04-02 00:14:17 PORTABLEREGISTRY: Unable to determine runtime Call type, cannot inspect sp_runtime::generic::unchecked_extrinsic::UncheckedExtrinsic
 
 JS Fetch All Transactions was successful!
 Updated avail_js_fetch_all_transactions result to True
@@ -1907,7 +1916,7 @@ Transaction retrieval completed successfully
 
 Error output:
    Compiling avail-rust v0.0.0 (/root/desktop/avail-rust)
-    Finished `dev` profile [unoptimized + debuginfo] target(s) in 10.17s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 9.13s
      Running `target/debug/avail-rust`
 
 RUST Fetch All Transactions was successful!
